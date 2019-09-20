@@ -1,0 +1,125 @@
+.tab-container {
+  position: relative;
+  display: block;
+  position: relative;
+  border: 0px solid gray;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  height: calc(100vh - 51px - 51px - 30px);
+  min-height: calc(100vh - 51px - 51px - 30px);
+  margin: 0 auto;
+  bottom: 0px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  @media screen and (min-width: 768px) {
+    .tab-container {
+      height: calc(100vh - 15vh - 51px - 51px - 30px);
+      min-height: calc(100vh - 15vh - 51px - 51px - 30px); } }
+  .tab-container .tab-items {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    height: calc(100vh - 51px - 51px - 30px);
+    min-height: calc(100vh - 51px - 51px - 30px);
+    border: 0px solid gray;
+    overflow: hidden; }
+    @media screen and (min-width: 768px) {
+      .tab-container .tab-items {
+        height: calc(100vh - 15vh - 51px - 51px - 30px);
+        min-height: calc(100vh - 15vh - 51px - 51px - 30px); } }
+  .tab-container ul {
+    display: block;
+    position: relative;
+    width: 100%;
+    /*width:400%;*/
+    height: 100%;
+    min-height: 100%;
+    height: calc(100vh - 51px - 51px - 30px);
+    min-height: calc(100vh - 51px - 51px - 30px);
+    list-style: none;
+    border: 0px red solid;
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    visibility: visible;
+    /*para la carga tiene que estar oculto sino efectos indeseados en la carga luego con javascript lo ponemos visible*/
+    margin: 0 auto; }
+    @media screen and (min-width: 768px) {
+      .tab-container ul {
+        height: calc(100vh - 15vh - 51px - 51px - 30px);
+        min-height: calc(100vh - 15vh - 51px - 51px - 30px); } }
+    .tab-container ul li.tab-item {
+      display: block;
+      overflow: hidden;
+      box-sizing: border-box;
+      position: relative;
+      /*width:25%; este valor cambiara con javascript */
+      height: calc(100% - 45px);
+      min-height: calc(100% - 45px);
+      height: calc(100vh - 51px - 51px - 45px);
+      min-height: calc(100vh - 51px - 51px - 45px);
+      border: 0px solid gray;
+      float: left; }
+      @media screen and (min-width: 768px) {
+        .tab-container ul li.tab-item {
+          height: calc(100vh - 15vh - 51px - 51px - 45px);
+          min-height: calc(100vh - 15vh - 51px - 51px - 45px); } }
+  .tab-container .tab-controls {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    z-index: 10;
+    border: 0px solid gray;
+    top: 0px; }
+    .tab-container .tab-controls a {
+      position: relative;
+      top: 0;
+      text-decoration: none;
+      display: inline-block;
+      width: 100px;
+      height: 30px;
+      line-height: 30px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-top: 1px solid #303F9F;
+      border-left: 1px solid #303F9F;
+      border-right: 1px solid #303F9F;
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      text-shadow: 1px 1px 0px black;
+      text-align: center;
+      color: #E8EAF6;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#673ab7+0,9575cd+100 */
+      background: #3F51B5;
+      /* Old browsers */
+      background: -moz-linear-gradient(top, #3F51B5 0%, #1A237E 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, #3F51B5 0%, #1A237E 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, #3F51B5 0%, #1A237E 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3F51B5', endColorstr='#1A237E',GradientType=0 );
+      /* IE6-9 */ }
+      .tab-container .tab-controls a.current {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#673ab7+0,9575cd+0,673ab7+51,5e35b1+100 */
+        background: #3F51B5;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #3F51B5 0%, #7986CB 0%, #3F51B5 51%, #3949AB 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #3F51B5 0%, #7986CB 0%, #3F51B5 51%, #3949AB 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #3F51B5 0%, #7986CB 0%, #3F51B5 51%, #3949AB 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3F51B5', endColorstr='#3949AB',GradientType=0 );
+        /* IE6-9 */
+        color: orange; }
+
+/*# sourceMappingURL=tabs01.css.map */

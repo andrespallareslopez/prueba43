@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+.loader-progress-01 {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  background: #E8EAF6; }
+  .loader-progress-01.content {
+    min-height: calc(100vh - 51px - 51px - 20px);
+    height: calc(100vh - 51px - 51px - 20px); }
+    @media (min-width: 768px) {
+      .loader-progress-01.content {
+        min-height: calc(100vh - 15vh - 51px - 51px - 20px);
+        height: calc(100vh - 15vh - 51px - 51px - 20px); } }
+  .loader-progress-01.splash-text {
+    height: calc(100vh - 19px); }
+  .loader-progress-01.splash {
+    height: 100vh; }
+  .loader-progress-01.splash-panel {
+    height: calc(100vh - 51px - 51px - 20px); }
+    @media (min-width: 768px) {
+      .loader-progress-01.splash-panel {
+        height: calc(100vh - 15vh - 51px - 51px - 20px); } }
+  .loader-progress-01 .icon-loader {
+    position: absolute;
+    padding: 0;
+    color: #3F51B5;
+    height: 64px;
+    width: 64px;
+    max-width: 64px;
+    margin: 0 auto;
+    left: calc(50% - 32px);
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%); }
+  .loader-progress-01 .wf-no-active {
+    visibility: hidden; }
+  .loader-progress-01 .wf-active {
+    visibility: visible; }
+  .loader-progress-01.hidden-icon {
+    visibility: hidden; }
+  .loader-progress-01.show-icon {
+    visibility: visible; }
+
+/*# sourceMappingURL=04loader-progress-01.css.map */

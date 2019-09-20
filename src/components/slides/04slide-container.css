@@ -1,0 +1,141 @@
+.slide-container {
+  display: block;
+  position: relative;
+  border: 0px solid gray;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  height: calc(100vh - 51px - 51px - 30px);
+  min-height: calc(100vh - 51px - 51px - 30px);
+  bottom: 0px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  @media screen and (min-width: 768px) {
+    .slide-container {
+      height: calc(100vh - 15vh - 51px - 51px - 30px);
+      min-height: calc(100vh - 15vh - 51px - 51px - 30px);
+      width: calc(100% - 0px); } }
+  .slide-container .slide-items {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    height: calc(100vh - 51px - 51px - 30px);
+    min-height: calc(100vh - 51px - 51px - 30px);
+    border: 0px solid gray;
+    overflow: hidden; }
+    @media screen and (min-width: 768px) {
+      .slide-container .slide-items {
+        height: calc(100vh - 15vh - 51px - 51px - 30px);
+        min-height: calc(100vh - 15vh - 51px - 51px - 30px); } }
+  .slide-container ul {
+    display: block;
+    position: relative;
+    width: 100%;
+    /*width:400%;*/
+    height: 100%;
+    min-height: 100%;
+    height: calc(100vh - 51px - 51px - 30px);
+    min-height: calc(100vh - 51px - 51px - 30px);
+    list-style: none;
+    border: 0px red solid;
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    visibility: hidden;
+    /*para la carga tiene que estar oculto sino efectos indeseados en la carga luego con javascript lo ponemos visible*/
+    margin: 0 auto; }
+    @media screen and (min-width: 768px) {
+      .slide-container ul {
+        height: calc(100vh - 15vh - 51px - 51px - 30px);
+        min-height: calc(100vh - 15vh - 51px - 51px - 30px); } }
+    .slide-container ul li {
+      display: block;
+      box-sizing: border-box;
+      position: relative;
+      /*  width:25%; este valor cambiara con javascript */
+      height: 100%;
+      min-height: 100%;
+      height: calc(100vh - 51px - 51px - 30px);
+      min-height: calc(100vh - 51px - 51px - 30px);
+      border: 0px solid gray;
+      float: left; }
+      @media screen and (min-width: 768px) {
+        .slide-container ul li {
+          height: calc(100vh - 15vh - 51px - 51px - 30px);
+          min-height: calc(100vh - 15vh - 51px - 51px - 30px); } }
+  .slide-container .slide-button {
+    display: block;
+    position: absolute;
+    background: transparent;
+    cursor: pointer;
+    border: 0px;
+    margin: 0px;
+    width: 48px;
+    height: 48px;
+    border-radius: 3px;
+    text-align: center;
+    opacity: 0.5;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    z-index: 10; }
+
+.slide-container .slide-button:hover {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#606c88+0,3f4c6b+100&0.97+1,1+100 */
+  background: -moz-radial-gradient(center, ellipse cover, rgba(96, 108, 136, 0.97) 0%, rgba(96, 108, 136, 0.97) 1%, #3f4c6b 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(96, 108, 136, 0.97) 0%, rgba(96, 108, 136, 0.97) 1%, #3f4c6b 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, rgba(96, 108, 136, 0.97) 0%, rgba(96, 108, 136, 0.97) 1%, #3f4c6b 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7606c88', endColorstr='#3f4c6b',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  color: #EDE7F6;
+  opacity: 1; }
+
+.slide-container .left {
+  left: 0; }
+
+.slide-container .right {
+  right: 0; }
+
+.slide-container .slide-controls {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background: transparent;
+  z-index: 10;
+  border: 0px solid gray;
+  margin: 0 auto;
+  top: 0px;
+  transform: translateY(-30px);
+  -webkit-transform: translateY(-30px); }
+
+.slide-container .slide-controls a {
+  position: relative;
+  top: 0;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  border: 3px solid green;
+  margin: 0 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -webkit-box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, 0.55); }
+
+.slide-container .slide-controls .current {
+  background: green; }
+
+/*# sourceMappingURL=04slide-container.css.map */

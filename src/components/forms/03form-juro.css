@@ -1,0 +1,58 @@
+/* Juro */
+.input--juro {
+  /*overflow: hidden;*/ }
+
+.input__field--juro {
+  position: absolute;
+  z-index: 100;
+  padding: 1.7em 1em 0;
+  width: 100%;
+  background: transparent;
+  color: #7e57c2;
+  font-size: 1em;
+  transition: all 0.3s ease-in-out; }
+
+.input__label--juro {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  text-align: left; }
+
+.input__label-content--juro {
+  padding: 0.5em 1em;
+  padding-bottom: 2em;
+  -webkit-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-transition: -webkit-transform 0.3s, color 0.3s;
+  transition: transform 0.3s, color 0.3s;
+  text-rendering: auto; }
+
+.input__label--juro::before {
+  content: '';
+  position: absolute;
+  background: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0px solid transparent;
+  -webkit-transition: border-width 0.3s, border-color 0.3s;
+  transition: border-width 0.3s, border-color 0.3s; }
+
+.input__field--juro:focus {
+  padding: 2.4em 1em 0; }
+
+.input__field--juro:focus + .input__label--juro::before,
+.input--filled .input__label--juro::before {
+  border-width: 8px;
+  border-color: #7e57c2;
+  border-top-width: 1.5em; }
+
+.input__field--juro:focus + .input__label--juro .input__label-content--juro,
+.input--filled .input__label--juro .input__label-content--juro {
+  color: #fff;
+  -webkit-transform: translate3d(0, -0.6em, 0) scale3d(0.9, 0.9, 1);
+  transform: translate3d(0, -0.6em, 0) scale3d(0.9, 0.9, 1) translateZ(1px); }
+
+/*# sourceMappingURL=03form-juro.css.map */

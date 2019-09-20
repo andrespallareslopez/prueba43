@@ -1,0 +1,46 @@
+
+$widthdatalist:300px;
+
+$widthButton:35px;
+$heightButton:28px;
+
+$sizeButton:25px;
+
+$sizeButtonClose:30px;
+
+@mixin list-slide-button-close-01{
+     background: -moz-radial-gradient(center, ellipse cover,  rgba(96,108,136,0.97) 0%, rgba(96,108,136,0.97) 1%, rgba(63,76,107,1) 100%); /* FF3.6-15 */
+     background: -webkit-radial-gradient(center, ellipse cover,  rgba(96,108,136,0.97) 0%,rgba(96,108,136,0.97) 1%,rgba(63,76,107,1) 100%); /* Chrome10-25,Safari5.1-6 */
+     background: radial-gradient(ellipse at center,  rgba(96,108,136,0.97) 0%,rgba(96,108,136,0.97) 1%,rgba(63,76,107,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7606c88', endColorstr='#3f4c6b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ 
+}
+
+@mixin datalist_element_01{
+    padding:5px;
+    padding-left: 25px;
+    border-top:1px solid $c100;
+    border-bottom:1px solid $c900;
+    display:block;
+    position:relative;  //importante poner en .element-link position:relative
+    width:100%;
+    cursor: pointer;
+    text-decoration: none;
+    color:$c50;
+    font-family: Helvetica,Arial,sans-serif ;
+    font-size:12px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px darkslategrey; 
+}
+@mixin datalist-element-hover-01{
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(96,108,136,0.97) 0%, rgba(96,108,136,0.97) 1%, rgba(63,76,107,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(96,108,136,0.97) 0%,rgba(96,108,136,0.97) 1%,rgba(63,76,107,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center,  rgba(96,108,136,0.97) 0%,rgba(96,108,136,0.97) 1%,rgba(63,76,107,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7606c88', endColorstr='#3f4c6b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+@mixin background-item-01{
+    background: $A400; /* Old browsers */
+    background: -moz-linear-gradient(top,  $A400 0%, $A700 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  $A400 0%,$A700 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  $A400 0%,$A700 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$A400}', endColorstr='#{$A700}',GradientType=0 ); /* IE6-9 */
+}

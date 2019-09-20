@@ -1,0 +1,54 @@
+@import "../../shared/scss/variables";
+
+.menu-popup01{
+    position: relative;
+    list-style: none;
+    width:calc(100% + 27px);
+   .element-link{
+       @include footer-principal-structure-element-01;
+       @include background-footer-item-01;
+   }
+
+   .animation-delay-01{
+     animation:toright 0.3s both cubic-bezier(0.075, 0.82, 0.165, 1);
+     animation-delay: 100ms;
+   }
+   .animation-delay-02{
+     animation:toright 0.3s both cubic-bezier(0.075, 0.82, 0.165, 1);
+     animation-delay: 250ms;
+   }
+   .animation-delay-03{
+     animation:toright 0.3s both cubic-bezier(0.075, 0.82, 0.165, 1);
+     animation-delay: 350ms;
+   }
+   .animation-delay-04{
+     animation:toright 0.3s both cubic-bezier(0.075, 0.82, 0.165, 1);
+     animation-delay: 450ms;
+   }
+   .animation-delay-05{
+     animation:toright 0.3s both cubic-bezier(0.075, 0.82, 0.165, 1);
+     animation-delay: 550ms;
+   }
+   .animation-delay-06{
+     animation:toright 0.3s both cubic-bezier(0.075, 0.82, 0.165, 1);
+     animation-delay: 650ms;
+   }
+}
+
+@keyframes toleft{
+    from{
+        transform:translate3d(-100%,0,0);
+    }
+    to {
+        transform:translate3d(0%,0,0);
+    }
+}
+
+@keyframes toright{
+    from {
+        transform:translate3d(0%,0,0);
+    }
+    to {
+        transform:translate3d(-100%,0,0);
+    }
+}

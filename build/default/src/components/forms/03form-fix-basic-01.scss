@@ -1,0 +1,199 @@
+@import "../../shared/scss/variables";
+@import "03form-mixins-basic-01";
+ 
+.form-fix-basic-01{
+     position:relative;
+     /*importante para que se centre */
+     margin-left: auto;
+     margin-right: auto;
+     @media screen and (max-width:320px){
+        max-width: 320px; 
+     }
+      
+     @media screen and (min-width:768px){
+        max-width:768px;
+     }       
+     
+     //.form-layout{
+      
+     //}
+    
+     fieldset{
+      
+       padding-bottom:25px;
+       padding-left:0;
+       padding-right:0;
+       border:0px solid $c500;
+     }
+     legend{
+         background:$c600;
+         color:$c50;
+         margin-left:20px;
+         padding-left:15px;
+         padding-right:15px;
+         padding-top:5px;
+         padding-bottom:5px;
+         border:1px solid $c500;
+         border-radius: 3px;
+         font-weight: bold;
+     }
+     .group-block{
+         margin-top:1px;
+         border-left: 4px solid $c900;
+         border-right:4px solid $c500;
+         border-bottom:1px solid $c100;
+         border-top: 1px solid $c400;
+     }
+     .group{
+      position:relative;
+      background:transparent;
+      display:block; 
+      
+      .list-button{
+        display:inline-block;
+        position:relative;
+        top:0;
+        //margin-top:0px;
+         text-align: center;
+        -webkit-user-select: none;
+      -moz-user-select: none;
+       -ms-user-select: none;
+          user-select: none;
+          
+        cursor:pointer;
+        background:$c900;
+        //pointer-events: none;
+        width:$widthButton;
+        height: $heightButton;
+        border:0px solid $c50;
+        border-radius:5px;
+        vertical-align: top;
+        .fa{
+         margin-top:1px;
+         vertical-align: top;   
+         font-weight: bold;
+         color:$c50; 
+        }   
+      }
+      .label{
+         display:inline-block;
+         position:relative;
+        // margin:0px;
+        // padding:0px;
+         margin-top:3px;
+         width:35px;
+         max-width: 35px;
+         span{
+             margin-left:6px;
+             margin-right:6px;
+             &.fa{
+                 font-size: 1.7em;
+                 color:$c900;
+             }
+         }    
+      }
+      .label-input{
+           display:inline-block;
+          position:relative;
+          width:100%; 
+          padding:5px;
+         
+         // margin-top:3px;
+          //left:35px;
+          span.logo{
+             width:35px;
+             //margin-left:6px;
+             //margin-right:6px;
+             &.fa{
+                 font-size: 1.7em;
+                 color:$c900;
+             }
+          }
+          span.text{
+             color:$c500;
+             display:inline-block;
+             vertical-align: top;
+             margin-top:4px;
+          }
+          .input{
+            font-family: "Roboto";
+            display:inline-block; 
+            width:calc(100% - 50px);
+            font-size:16px;
+            color:$c700;
+            padding:4px;
+            margin:0px;
+            border:none;
+            vertical-align: top;
+            
+            &:focus{
+             background-color:$c50;
+             border:1px solid $c300;
+            }
+
+            &.small{
+              width:20%;  
+            }
+            &.medium{
+              width:60%;  
+            }
+            &.large{
+              width:80%;  
+            }
+          }
+      }
+      .label-help{
+          display:inline-block;
+          position:relative;
+          width:100%; 
+          padding:5px;
+         
+         // margin-top:3px;
+          //left:35px;
+          span.logo{
+             width:35px;
+             //margin-left:6px;
+             //margin-right:6px;
+             &.fa{
+                 font-size: 1.5em;
+                 color:$c900;
+             }
+          }
+          span.text{
+             color:$c500;
+             display:inline-block;
+             vertical-align: top;
+             margin-top:4px;
+          }
+
+      }
+      .label-warning{
+          display:inline-block;
+          position:relative;
+          width:100%; 
+          padding:5px;
+         
+         // margin-top:3px;
+          //left:35px;
+          span.logo{
+             width:35px;
+             //margin-left:6px;
+             //margin-right:6px;
+             &.fa{
+                 font-size: 1.5em;
+                 color:orangered;
+             }
+          }
+          span.text{
+             color:orangered;
+             display:inline-block;
+             vertical-align: top;
+             margin-top:4px;
+          }
+      }
+
+     
+      
+    }
+
+}

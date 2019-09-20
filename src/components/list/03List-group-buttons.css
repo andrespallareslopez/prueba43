@@ -1,0 +1,137 @@
+.list-grp-buttons {
+  display: block;
+  width: 100%;
+  height: 100%;
+  /*min-height:calc(100vh - 51px - 51px - 30px);*/
+  position: relative;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /*margin:0 auto;*/
+  margin-left: auto;
+  margin-right: auto;
+  /*
+  left:100%;
+  transform:translateX(-100%);
+  -webkit-transform:translateX(-100%);
+  -moz-transform:translateX(-100%);
+  -ms-transform:translateX(-100%);
+  */ }
+  .list-grp-buttons.space-top-1x {
+    margin-top: 15px; }
+
+.list-grp-buttons.list-center {
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%); }
+
+.list-grp-buttons-box {
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+.list-grp-button {
+  display: inline-block;
+  position: relative;
+  /*float:left;*/
+  margin: 0px;
+  height: 128px;
+  width: 129px;
+  border-radius: 3px;
+  border: 1px solid #5C6BC0;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.box-shadow-1 {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.33+100 */
+  background: -moz-radial-gradient(center, ellipse cover, transparent 0%, rgba(0, 0, 0, 0.33) 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, transparent 0%, rgba(0, 0, 0, 0.33) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.33) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#54000000',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+
+.box-shadow-2 {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.33+0,0+67 */
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.33) 0%, transparent 67%, transparent 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.33) 0%, transparent 67%, transparent 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.33) 0%, transparent 67%, transparent 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54000000', endColorstr='#00000000',GradientType=0 );
+  /* IE6-9 */ }
+
+.box-shadow-3 {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.14+0,0+67 */
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.14) 0%, transparent 67%, transparent 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.14) 0%, transparent 67%, transparent 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.14) 0%, transparent 67%, transparent 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24000000', endColorstr='#00000000',GradientType=0 );
+  /* IE6-9 */ }
+
+.box-shadow-4 {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+33,0.14+100 */
+  background: -moz-radial-gradient(center, ellipse cover, transparent 0%, transparent 33%, rgba(0, 0, 0, 0.14) 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, transparent 0%, transparent 33%, rgba(0, 0, 0, 0.14) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, transparent 0%, transparent 33%, rgba(0, 0, 0, 0.14) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#24000000',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+
+.list-grp-content {
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+.list-grp-content-top {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 128px;
+  height: 96px; }
+
+.list-grp-content-bottom {
+  box-sizing: border-box;
+  border-top: 3px solid #5C6BC0;
+  width: 128px;
+  height: 32px; }
+
+.list-grp-content-text {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  font-family: Helvetica,Arial, sans-serif;
+  color: #3949AB;
+  text-align: center;
+  line-height: 24px; }
+
+.list-grp-context-text-center {
+  display: block;
+  position: absolute;
+  height: auto;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.list-grp-content-icon {
+  position: absolute;
+  top: 24px;
+  left: 40px;
+  color: #283593; }
+
+.list-grp-buttons .fa {
+  color: #283593; }
+
+/*# sourceMappingURL=03List-group-buttons.css.map */

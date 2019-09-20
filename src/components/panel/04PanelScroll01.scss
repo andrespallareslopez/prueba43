@@ -1,0 +1,99 @@
+@import "../../shared/scss/variables";
+
+      
+    .panel-scroll{
+          position:relative;
+          height: 100%;
+          overflow: hidden;
+
+
+
+          .slide-button-panel{
+              
+           display:block;
+           position:absolute;
+           background:transparent;
+           cursor:pointer;
+           border:0px;
+           margin:0px;
+     
+           width:68px;
+           height:68px;
+           border-radius:50%;
+           text-align: center;
+           opacity: 0.8;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+            color:$c50;
+            z-index:12;
+             /*
+             top:50%;
+             transform:translateY(-50%);
+             -webkit-transform: translateY(-50%);
+             z-index:20;
+             */
+        @include menu-vertical-slide-button-01;
+
+
+        &.no-visible{
+          visibility:hidden;
+        }
+        
+        &.disabled{
+          opacity: 0.2; 
+          cursor: not-allowed; 
+        }
+        &:hover{
+          color:$c50;
+          opacity: 1;
+          @include menu-vertical-slide-button-hover-01;
+        } 
+    }
+      .top{
+      
+       top:0;
+       right:0;
+     }
+     .bottom{
+       
+       bottom:0;
+       right:0;
+     }    
+    .panel-scroll-content{
+        position:relative;
+          height: 100%;
+      overflow: hidden;
+       overflow-y: scroll;  //se pone fijo para que no tengamos problemas de anchura
+       width:calc(100% + 27px);
+        
+     
+       
+       /*
+       height:calc(100vh - #{$nav} - #{$footer});
+       min-height:calc(100vh - #{$nav} - #{$footer});
+       */
+       
+      
+    .panel-scroll-item{
+               /*
+          nota importante: si no establecemos height y ponemos overflow:hidden, la altura se estable por el total
+         del contenido automaticamente, hasta el final, pero establecemos height, la altura se establecera hasta 
+         la altura visible o vieport
+         En este caso prohibido poner height:100%; aqui en items;
+            */
+       position: absolute; //poner absolute dentro de table y table-cell trastoca el height
+         list-style: none;
+         width:calc(100% - 27px);
+      
+         
+         top:0;
+         left:0;
+         
+       
+      
+
+         }
+       }
+    }

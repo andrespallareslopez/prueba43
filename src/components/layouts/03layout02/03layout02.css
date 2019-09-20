@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+*[data-yield-for] {
+  display: none; }
+
+*[data-yield-to] {
+  display: inline-block;
+  position: relative; }
+
+button::-moz-focus-inner {
+  border: 0; }
+
+button:focus {
+  outline: 0; }
+
+button:active {
+  outline: 0; }
+
+html, body {
+  height: 100%; }
+
+input:focus {
+  outline: none; }
+
+.container, .lyt03layout02 {
+  display: block;
+  position: relative;
+  max-width: 960px;
+  /*importante para que se centre */
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  overflow-y: auto; }
+
+.lyt03layout02 .pages {
+  display: block;
+  position: relative;
+  width: 100%;
+  background: #E8EAF6; }
+.lyt03layout02 .main-body {
+  display: block;
+  position: relative;
+  width: 100%; }
+.lyt03layout02 .wrapper {
+  display: block;
+  max-width: 960px;
+  width: 100%;
+  min-width: 320px; }
+.lyt03layout02 .page {
+  position: relative;
+  top: 0;
+  left: 0; }
+  @media screen and (min-width: 768px) {
+    .lyt03layout02 .page {
+      margin-left: 200px;
+      width: calc(100% - 200px); } }
+.lyt03layout02 .menu-area {
+  display: block;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#673ab7+0,9575cd+100 */
+  background: #3F51B5;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #3F51B5 0%, #7986CB 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #3F51B5 0%, #7986CB 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #3F51B5 0%, #7986CB 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3F51B5', endColorstr='#7986CB',GradientType=0 );
+  /* IE6-9 */
+  -webkit-box-shadow: 4px 0px 5px -1px rgba(51, 47, 51, 0.81);
+  -moz-box-shadow: 4px 0px 5px -1px rgba(51, 47, 51, 0.81);
+  box-shadow: 4px 0px 5px -1px rgba(51, 47, 51, 0.81);
+  margin-left: -230px;
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  padding-top: 0px;
+  transition: all 0.3s linear;
+  z-index: 25; }
+  @media screen and (min-width: 768px) {
+    .lyt03layout02 .menu-area {
+      height: 100%;
+      margin-left: 0; } }
+@media screen and (min-width: 768px) {
+  .lyt03layout02 header + .menu-area {
+    height: calc(100% - 15vh); } }
+.lyt03layout02 .wrapper.page.root {
+  transition: all 0.3s ease-in-out; }
+.lyt03layout02 header {
+  display: none;
+  height: 15%;
+  height: 15vh;
+  background: #3F51B5; }
+.lyt03layout02 .nav {
+  position: relative;
+  display: block;
+  width: 100%; }
+.lyt03layout02 nav {
+  display: block;
+  width: 100%;
+  height: 51px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#673ab7+0,9575cd+100 */
+  background: #3F51B5;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #1A237E 0%, #3F51B5 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #1A237E 0%, #3F51B5 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #1A237E 0%, #3F51B5 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1A237E', endColorstr='#3F51B5',GradientType=0 );
+  /* IE6-9 */
+  -moz-box-shadow: 0px 9px 18px -5px rgba(51, 47, 51, 0.81);
+  -webkit-box-shadow: 0px 9px 18px -5px rgba(51, 47, 51, 0.81);
+  box-shadow: 0px 9px 18px -5px rgba(51, 47, 51, 0.81); }
+.lyt03layout02 .main {
+  position: relative;
+  display: block;
+  width: 100%;
+  /*overflow: hidden;*/ }
+.lyt03layout02 main {
+  /* tiene que ser table --> si no menu vertical no escalara hasta abajo */
+  position: relative;
+  /* importante para navegadores mobiles */
+  width: 100%;
+  display: block; }
+  @media screen and (min-width: 321px) {
+    .lyt03layout02 main {
+      min-height: 250px; } }
+.lyt03layout02 .content-no-footer {
+  display: block;
+  position: relative;
+  padding: 10px;
+  width: 100%;
+  height: calc(100vh - 51px);
+  min-height: 100%;
+  min-width: 320px;
+  background: transparent; }
+  @media screen and (min-width: 768px) {
+    .lyt03layout02 .content-no-footer {
+      height: calc(100vh - 15vh - 51px); } }
+.lyt03layout02 .content-no-nav-no-footer {
+  display: block;
+  position: relative;
+  padding: 10px;
+  width: 100%;
+  height: calc(100vh);
+  min-height: 250px;
+  min-width: 320px;
+  background: transparent; }
+  @media screen and (min-width: 768px) {
+    .lyt03layout02 .content-no-nav-no-footer {
+      height: calc(100vh - 15vh); } }
+.lyt03layout02 .content {
+  display: block;
+  position: relative;
+  padding: 5px;
+  width: 100%;
+  min-height: 100%;
+  min-height: calc(100vh - 51px - 51px);
+  min-width: 320px;
+  background: transparent; }
+  @media screen and (min-width: 768px) {
+    .lyt03layout02 .content {
+      min-height: calc(100vh - 15vh - 51px - 51px); } }
+.lyt03layout02 .content-no-nav {
+  display: block;
+  position: relative;
+  padding: 10px;
+  width: 100%;
+  height: calc(100vh - 51px);
+  min-height: 250px;
+  min-width: 320px;
+  background: transparent; }
+  @media screen and (min-width: 768px) {
+    .lyt03layout02 .content-no-nav {
+      height: calc(100vh - 15vh - 51px); } }
+.lyt03layout02 .right {
+  display: none;
+  width: 200px; }
+.lyt03layout02 .footer {
+  position: relative;
+  display: block;
+  width: 100%; }
+.lyt03layout02 footer {
+  width: 100%;
+  display: block;
+  height: 51px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#673ab7+0,9575cd+100 */
+  background: #3F51B5;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #3F51B5 0%, #1A237E 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #3F51B5 0%, #1A237E 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #3F51B5 0%, #1A237E 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3F51B5', endColorstr='#1A237E',GradientType=0 );
+  /* IE6-9 */
+  -webkit-box-shadow: 0px -7px 18px -5px rgba(51, 47, 51, 0.81);
+  -moz-box-shadow: 0px -7px 18px -5px rgba(51, 47, 51, 0.81);
+  box-shadow: 0px -7px 18px -5px rgba(51, 47, 51, 0.81); }
+  @media screen and (min-width: 768px) {
+    .lyt03layout02 footer {
+      width: calc(100% - 0px); } }
+.lyt03layout02 .section-open .menu-area {
+  margin-left: 0px; }
+.lyt03layout02 .section-open .wrapper.page.root {
+  margin-left: 200px;
+  width: calc(100% - 200px); }
+.lyt03layout02 .push-float-left {
+  float: left; }
+.lyt03layout02 .push-float-right {
+  float: right; }
+.lyt03layout02 .push-center-inner {
+  position: relative;
+  /*importante para que se centre */
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden; }
+.lyt03layout02 .push-center-1x {
+  max-width: 65px; }
+.lyt03layout02 .push-center-2x {
+  max-width: 130px; }
+.lyt03layout02 .push-center-3x {
+  max-width: 240px; }
+  @media screen and (min-width: 768px) {
+    .lyt03layout02 .push-center-3x {
+      left: 0px; } }
+.lyt03layout02 .push-center-inline-3x {
+  display: inline-block;
+  max-width: 240px;
+  left: calc(50% - 100px); }
+@media screen and (min-width: 768px) {
+  .lyt03layout02 html, .lyt03layout02 body {
+    background: white; }
+  .lyt03layout02 #btn-toggle-left {
+    display: none; }
+  .lyt03layout02 #btn-toggle-right {
+    display: none; }
+  .lyt03layout02 #btn-toggle-sign-in {
+    z-index: 50; }
+  .lyt03layout02 #frmsearch01 {
+    z-index: 50; }
+  .lyt03layout02 .logo {
+    width: 10%;
+    height: 100%;
+    float: left; }
+  .lyt03layout02 .logo svg {
+    width: 100%;
+    height: 100%; }
+  .lyt03layout02 .title-application {
+    color: #E8EAF6;
+    float: left;
+    top: -50%;
+    transform: translateY(50%); }
+  .lyt03layout02 header {
+    display: block;
+    position: position;
+    width: 100%;
+    top: 0;
+    left: 0; } }
+
+/*# sourceMappingURL=03layout02.css.map */

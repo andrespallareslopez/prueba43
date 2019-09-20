@@ -1,0 +1,293 @@
+
+//***********************************
+//********** mixins *****************
+
+
+//************************************
+
+@import "../../../shared/scss/variables";
+
+@import "../../../shared/scss/reset";
+
+
+//****************************************
+button::-moz-focus-inner {
+  border: 0;
+}
+button:focus{
+     outline: 0;
+}
+button:active{
+    outline:0;
+}
+
+html,body{
+    height: 100%;
+   
+  
+}
+.container,.lyt03layout01{
+    display:block;
+    position:relative;
+    max-width:$maxpagew;  /*importante para que se centre */
+    width:100%;
+    //height: 100%;
+    margin:0 auto;
+    //overflow:hidden;
+    //overflow-y:auto;  
+}
+.lyt03layout01{
+    .pages{
+        display:block;
+        position:relative;
+        width:100%;
+        //height:100%;
+    }
+    .wrapper{
+        display:table;
+        
+        max-width:$maxpagew;
+        width:100%;
+        //height:100vh;
+        
+        background: $c50;
+        
+        border-collapse:separate;
+        border-spacing: 0px;
+        @media (min-width:768px){
+        //height:calc(100vh - #{$headerHeight});
+        //min-height:calc(100vh - #{$headerHeight});
+        }
+        //overflow:hidden;
+        //overflow-y:auto;  
+    }
+    .header{
+        display:table-header-group;
+        width:100%;
+        height:$headerHeight;
+        
+    }
+    header{
+        display:none;
+        width:100%;
+        height:$headerHeight;
+        background:$c500;
+        @media (min-width:768px){
+            display:block;
+        }     
+    }
+    .main-body{
+        display:table-row;
+        width:100%;
+        @media (min-width:768px){
+        //height:calc(100vh - #{$headerHeight});
+        //min-height:calc(100vh - #{$headerHeight});
+        }
+
+    }
+    .page{
+        display:table;
+        position:relative;
+        width:100%;
+        
+        @media (min-width:768px){
+            //height:calc(100vh - #{$headerHeight} - #{$nav} - #{$footer});
+            //min-height:calc(100vh - #{$headerHeight} - #{$nav} - #{$footer});
+        }
+    }
+
+    .nav{
+    position:relative;
+    display:table-row;
+    width:100%;
+    }
+
+    nav{
+    
+        display:table-cell;
+        width:100%;
+        height:$nav;
+    @include background01;
+    @include shadowbottom02;
+    
+    }
+    .main{
+        position:relative;
+        display:table-row;
+        width:100%;
+        //height: 100%;
+        
+        //overflow: hidden;
+        //height: calc(100vh - #{$nav} - #{$footer});
+        //min-height: calc(100vh - #{$nav} - #{$footer});
+        @media (min-width:768px){
+            //height:calc(100vh - #{$headerHeight} - #{$nav} - #{$footer});
+            //min-height:calc(100vh - #{$headerHeight} - #{$nav} - #{$footer});
+        }
+    }
+
+    main{
+        /* tiene que ser table --> si no menu vertical no escalara hasta abajo */
+        position:relative;  /* importante para navegadores mobiles */
+        width:100%;
+        display:table-cell;
+        //height:100%;
+        
+        //overflow:hidden;
+        height: calc(100vh - #{$nav} - #{$footer});
+        min-height: calc(100vh - #{$nav} - #{$footer});
+        @media (min-width:768px){
+        height:calc(100vh - #{$headerHeight} - #{$nav} - #{$footer});
+        min-height:calc(100vh - #{$headerHeight} - #{$nav} - #{$footer});
+        }
+        
+    }
+    .main-area{
+        display:table-cell;
+        position:relative;
+        width:calc(100% - #{$asidew});
+        vertical-align: top;
+        @media (min-width:768px){
+        //height:calc(100vh - #{$headerHeight});
+        //min-height:calc(100vh - #{$headerHeight});
+        }
+        
+    }
+
+    .menu-area{
+    display:table-cell;
+    @include background-menu-area-01;
+    @include shadow02;
+    margin-left: -#{$asidewdesplaz};
+    @media (min-width:768px){
+        margin-left:0;
+        //height:calc(100vh - #{$headerHeight});
+        //min-height:calc(100vh - #{$headerHeight});
+    }
+    
+    width: #{$asidew};
+    
+
+    //height:100%;
+    //min-height: 100%;
+    
+        //height: calc(100vh - #{$nav} - #{$footer});
+        // min-height:calc(100vh - #{$nav} - #{$footer});
+    
+        /*width:calc(#{$asidew} + 17px);*/  
+    position:relative;
+    padding-top:0px;
+    transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+    overflow: hidden;
+    vertical-align: top;
+    z-index:24;
+    }
+
+
+
+
+    .content{
+        display:table;
+        position:relative;
+        
+        //overflow:hidden;
+        //overflow-y:auto;  
+        padding:10px;
+        width:100%;
+        height: 100%;
+            
+        
+        //height:calc(100vh - #{$nav} - #{$footer});
+        //min-height:calc(100vh - #{$nav} - #{$footer});
+        min-width: $minpage;
+        background:transparent;
+        @media (min-width:768px){
+            //height:calc(100vh - #{$headerHeight} - #{$nav} - #{$footer});
+            //min-height:calc(100vh - #{$headerHeight} - #{$nav} - #{$footer});
+        }
+    }
+
+
+    .footer{
+        position:relative;
+        display:table-row;
+        width:100%;
+    
+    }
+    footer {
+        width:100%;
+        display:table-cell;
+        height: $footer;
+        @include background01-inv;
+        @include shadowtop01;
+    
+    }
+    /*
+    .section-open .menu-area{
+    margin-left:0px; 
+    }
+    */
+    .push-float-left{
+        float:left;
+    }
+    .push-float-right{
+        float:right;
+    }
+    .push-center-inner{
+        position:relative;
+        /*importante para que se centre */
+        margin-left: auto;
+        margin-right: auto;
+        overflow:hidden;
+    }
+    .push-center-1x{
+        max-width:65px; 
+    }
+    .push-center-2x{
+        max-width:130px; 
+    }
+    @media (min-width:768px){
+        
+        #btn-toggle-left{
+        display:none;
+    }
+    #btn-toggle-right{
+        display:none;
+    }
+    #btn-toggle-sign-in{
+        z-index:50;
+    }
+    #frmsearch01{
+        z-index:50;
+    }
+    
+            .logo{
+                width:10%;
+                height: 100%;
+                float:left;  
+            }
+            .logo svg{
+                
+                width:100%;
+                height:100%;
+            }
+            .title-application{
+                color:$c50;
+                float:left;
+                top:-50%;
+                transform:translateY(50%);
+            }
+            header{
+                display:block; 
+                position: position;
+                width:100%;
+                //height: $headerHeight;
+                
+                //clear:both;
+                top:0;
+                left:0;
+                
+            }
+    }
+}

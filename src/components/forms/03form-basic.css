@@ -1,0 +1,84 @@
+.form-basic .group {
+  position: relative;
+  top: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  background: transparent; }
+.form-basic .small, .form-basic .small ~ .bar, .form-basic .small ~ .hightlight {
+  width: 20%; }
+.form-basic .medium,
+.form-basic .medium ~ .bar,
+.form-basic .medium ~ .hightlight {
+  width: 60%; }
+.form-basic .large,
+.form-basic .large ~ .bar,
+.form-basic .large ~ .hightlight {
+  width: 80%; }
+.form-basic .full, .form-basic .full ~ .bar, .form-basic .full ~ .hightlight {
+  width: 100%; }
+.form-basic input {
+  color: #303F9F;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  background: #E8EAF6;
+  border: none;
+  border-bottom: 2px solid #1A237E;
+  -webkit-box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, 0.75); }
+.form-basic input:focus {
+  outline: none; }
+.form-basic label {
+  color: #1A237E;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all; }
+.form-basic input:focus ~ label,
+.form-basic input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #3F51B5; }
+.form-basic .bar {
+  position: relative;
+  display: block; }
+.form-basic .bar:before,
+.form-basic .bar:after {
+  content: '';
+  height: 3px;
+  width: 0;
+  bottom: 2px;
+  position: absolute;
+  background: #1A237E;
+  transition: 0.2s ease all; }
+.form-basic .bar:before {
+  left: 50%; }
+.form-basic .bar:after {
+  right: 50%; }
+.form-basic input:focus ~ .bar:before,
+.form-basic input:focus ~ .bar:after {
+  width: 50%; }
+.form-basic .hightlight {
+  position: absolute;
+  height: 80%;
+  top: 5%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  z-index: 999; }
+.form-basic input:focus ~ .hightlight {
+  background: #7986CB;
+  animation: inputHightlighter 0.3s ease; }
+@keyframes inputHightlighter {
+  from {
+    background: #7986CB; }
+  to {
+    width: 0;
+    background: transparent; } }
+
+/*# sourceMappingURL=03form-basic.css.map */

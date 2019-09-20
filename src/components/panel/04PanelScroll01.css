@@ -1,0 +1,82 @@
+.panel-scroll {
+  position: relative;
+  height: 100%;
+  overflow: hidden; }
+  .panel-scroll .slide-button-panel {
+    display: block;
+    position: absolute;
+    background: transparent;
+    cursor: pointer;
+    border: 0px;
+    margin: 0px;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    text-align: center;
+    opacity: 0.8;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #E8EAF6;
+    z-index: 12;
+    /*
+    top:50%;
+    transform:translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    z-index:20;
+    */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(96, 108, 136, 0.97) 0%, rgba(96, 108, 136, 0.97) 1%, #3f4c6b 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(96, 108, 136, 0.97) 0%, rgba(96, 108, 136, 0.97) 1%, #3f4c6b 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(96, 108, 136, 0.97) 0%, rgba(96, 108, 136, 0.97) 1%, #3f4c6b 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7606c88', endColorstr='#3f4c6b',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */ }
+    .panel-scroll .slide-button-panel.no-visible {
+      visibility: hidden; }
+    .panel-scroll .slide-button-panel.disabled {
+      opacity: 0.2;
+      cursor: not-allowed; }
+    .panel-scroll .slide-button-panel:hover {
+      color: #E8EAF6;
+      opacity: 1;
+      background: -moz-radial-gradient(center, ellipse cover, rgba(96, 108, 136, 0.97) 0%, rgba(96, 108, 136, 0.97) 1%, #3f4c6b 100%);
+      /* FF3.6-15 */
+      background: -webkit-radial-gradient(center, ellipse cover, rgba(96, 108, 136, 0.97) 0%, rgba(96, 108, 136, 0.97) 1%, #3f4c6b 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: radial-gradient(ellipse at center, rgba(96, 108, 136, 0.97) 0%, rgba(96, 108, 136, 0.97) 1%, #3f4c6b 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7606c88', endColorstr='#3f4c6b',GradientType=1 );
+      /* IE6-9 fallback on horizontal gradient */ }
+  .panel-scroll .top {
+    top: 0;
+    right: 0; }
+  .panel-scroll .bottom {
+    bottom: 0;
+    right: 0; }
+  .panel-scroll .panel-scroll-content {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    width: calc(100% + 27px);
+    /*
+    height:calc(100vh - 51px - 51px);
+    min-height:calc(100vh - 51px - 51px);
+    */ }
+    .panel-scroll .panel-scroll-content .panel-scroll-item {
+      /*
+ nota importante: si no establecemos height y ponemos overflow:hidden, la altura se estable por el total
+del contenido automaticamente, hasta el final, pero establecemos height, la altura se establecera hasta 
+la altura visible o vieport
+En este caso prohibido poner height:100%; aqui en items;
+   */
+      position: absolute;
+      list-style: none;
+      width: calc(100% - 27px);
+      top: 0;
+      left: 0; }
+
+/*# sourceMappingURL=04PanelScroll01.css.map */

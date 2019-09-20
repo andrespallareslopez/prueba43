@@ -1,0 +1,36 @@
+.page-box {
+  position: relative;
+  width: 100%;
+  height: 32px;
+  background: transparent;
+  z-index: 10;
+  padding-top: 8px; }
+  .page-box .page-controls {
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateX(-50%);
+    height: 32px; }
+    .page-box .page-controls .page-button {
+      cursor: pointer;
+      text-decoration: none;
+      position: relative;
+      border-radius: 2px;
+      background: #E8EAF6;
+      outline: none;
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      color: #303F9F;
+      margin: 0 1px;
+      text-align: center; }
+      .page-box .page-controls .page-button:hover {
+        background: #7986CB;
+        color: #E8EAF6; }
+      .page-box .page-controls .page-button.current {
+        background: #3F51B5;
+        color: #E8EAF6; }
+
+/*# sourceMappingURL=page-controls.css.map */

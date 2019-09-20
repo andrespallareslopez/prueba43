@@ -1,0 +1,178 @@
+@import "../../shared/scss/variables";
+
+.menu-horizontal{
+    /*display:none;*/
+    width:100%;
+    position:absolute;
+    top:49px;
+    left:0px;
+     opacity: 0;
+    padding-left:0px;
+    padding-right:0px;
+    list-style: none;
+    transform:translateY(-260%);
+    -webkit-transform: translateY(-260%);
+    transition:all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+     @include shadow01;
+     z-index:25;
+     @media screen and  (min-width:768px){
+        position:absolute;
+        transform:none;
+        transition:none;
+        padding-left:5px;
+        top:0;
+        left:0;
+        height:47px;
+        box-shadow:none;
+        opacity:1;
+           border-top:1px solid $c300;
+     }
+     .fa{
+         @media screen and  (min-width:768px){
+            display:none;
+         }
+     }
+
+     .no-active{
+        pointer-events: none;
+        cursor: default;
+     }
+ 
+      .element:last-child .element-link{
+          border-bottom: 1px solid $c300;
+      }
+      .element .element-link,
+      .element .back-element,
+      .element .sub-element{
+            display:block;
+            font-family: Helvetica,Arial,sans-serif ;
+            font-weight: bold;
+            text-shadow: 1px 1px 0px black;
+            text-decoration: none;
+            color: $c50;
+            @include background-menu-horizontal-element-01;
+            padding:10px;
+            //border-top:1px solid $c300;
+            @media screen and (min-width:768px){
+                @include background01;
+            }
+      }
+      .element{
+         @media screen and  (min-width:768px){
+            color: #EDE7F6;
+            position:relative;
+            /*width:25%;*/
+            height: 47px;;
+            top:0;
+            left:0;
+            float:left;
+            opacity:1;
+          
+          }
+          &:last-child{
+              .element-link{
+                 @media screen and  (min-width:768px){
+                    border-bottom: none;
+                 } 
+              }
+          }
+          &:hover{
+                .element-link{
+                  @media screen and  (min-width:768px){
+                      
+                      border-top:5px solid yellow;
+                  }
+                 }
+                .element-link + .sub-menu{
+                   @media screen and  (min-width:768px){
+                    display:block;
+                    left:0;
+                     box-sizing: border-box;
+                   }
+                   .element-link{
+                       @media screen and  (min-width:768px){
+                             border-bottom:none;
+                             border-top:none;
+                       }
+                       &:hover{
+                          @media screen and  (min-width:768px){
+                                box-sizing: border-box;
+                               //border-bottom:5px solid yellow;
+                          } 
+                       }    
+                   }
+                }  
+          }
+              .element-link{
+                @media screen and (min-width:768px){
+                   display:block;
+                   padding:13px;
+                   border-right: 1px solid $c50;
+                  
+                }
+              }
+              .back-element{
+                  @media (min-width:768px){
+                    display:none; 
+                  }
+              }
+      } 
+      
+      &.navbars-open{
+            opacity: 1;
+           transform:translateY(0%);
+       -webkit-transform:translateY(0%);
+        @media screen and  (min-width:768px){
+          transform:none;
+          -webkit-transform: none; 
+        }
+      }
+      .back-element .fa{
+           padding-top:2px;
+         padding-right:5px;
+      }
+      .sub-menu{
+         overflow: hidden;
+         position: absolute;
+         width:100%;
+         top:0;
+         left:150%;
+         min-height: 210px;
+         @include shadow01;
+         @include background-menu-horizontal-element-01;
+         opacity: 0;
+         transition:all 0.3s ease-in-out;
+         z-index:30;
+         @media screen and  (min-width:768px){
+              display:none;
+              position:absolute;
+              width:150px;
+              top:47px;
+        
+              transition:none;
+              min-height: none;
+              opacity:1;  
+         }
+         .element-link{
+             @media screen and (min-width:768px){
+                 @include background01-inv;
+                 border-right:none;
+             }
+           &:hover{
+             @media screen and  (min-width:768px){
+                 @include background-menu-vertical-item-hover-01;
+             }
+           }    
+         }
+      }
+      .sub-menu a:last-child{
+           border-bottom: 1px solid $c300;
+      }
+
+}
+.menu-horizontal >li>a.expand+.sub-menu{
+   left:0;
+   opacity:1;    
+}
+

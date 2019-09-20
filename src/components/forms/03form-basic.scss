@@ -1,0 +1,124 @@
+@import "../../shared/scss/variables";
+
+.form-basic{
+    .group{
+        position:relative;
+        top:20px;
+        margin-left:25px;
+        margin-right:25px;
+        margin-bottom:25px;
+        background:transparent;
+        
+    }
+    .small
+    {
+      &,  
+      & ~ .bar,
+      & ~ .hightlight
+      {
+         width:20%;
+      }  
+    }
+     
+    .medium, 
+    .medium ~ .bar,
+    .medium ~ .hightlight
+    {
+      width:60%;
+    }
+    
+    .large,
+    .large ~ .bar,
+    .large ~ .hightlight
+    {
+      width:80%;
+    }
+    .full
+    {
+      &,
+      & ~ .bar,
+      & ~ .hightlight{
+           width:100%;
+      }  
+    }
+     input{
+         color: $c700;
+         font-size:18px;
+         padding:10px 10px 10px 5px;
+         display:block;
+    
+         background:$c50;
+      
+         border:none;
+         border-bottom:2px solid $c900;
+    
+         -webkit-box-shadow: 3px 5px 10px 1px rgba(0,0,0,0.75);
+         -moz-box-shadow: 3px 5px 10px 1px rgba(0,0,0,0.75);
+         box-shadow: 3px 5px 10px 1px rgba(0,0,0,0.75);
+     }
+     input:focus {
+        outline: none;
+     }
+     label {
+       color:$c900;
+       font-size:18px;
+       font-weight: normal;
+       position:absolute;
+       pointer-events:none;
+       left:5px;
+       top:10px;
+       transition:0.2s ease all;
+    }
+    input:focus ~label,
+    input:valid ~ label {
+       top:-20px;
+       font-size:14px;
+       color:$c500;
+    }
+    
+    .bar {
+        position:relative;
+        display:block;
+        //width:100%;
+    }
+    .bar:before, 
+    .bar:after{
+        content:'';
+        height:3px;
+        width:0;
+        bottom:2px;
+        position:absolute;
+        background:$c900;
+        transition:0.2s ease all;
+    }
+    .bar:before{
+      left:50%;
+    }
+    .bar:after{
+      right:50%;
+    }
+     input:focus ~ .bar:before,
+     input:focus ~ .bar:after{
+        width:50%;
+     }
+     .hightlight{
+        position:absolute;
+        height:80%;
+        //width:100%;
+        top:5%;
+        left:0;
+        pointer-events:none;
+        opacity: 0.5;  
+        z-index: 999;  
+     }
+     input:focus ~.hightlight {
+       background: $c300     ;//#5264AE;
+       animation:inputHightlighter 0.3s ease;
+     }
+     @keyframes inputHightlighter {
+     from { background:$c300; }
+      to    { 
+       width:0;
+       background:transparent; }
+     } 
+}

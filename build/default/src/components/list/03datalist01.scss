@@ -1,0 +1,56 @@
+@import "../../shared/scss/variables";
+@import "03datalist_mixins01";
+
+.datalist{
+    width:$widthdatalist;
+    height: 150px;
+    margin-top:10px;
+    background:$c400;
+    .panel-datalist{
+        width:$widthdatalist;
+        height: 150px;
+      
+        background:$c400;
+    }
+    .slide-button-panel{
+       display:block;
+       position:absolute;
+       background:transparent;
+       cursor:pointer;
+       border:0px;
+       margin:0px;
+       
+       width:$sizeButton;
+       height:$sizeButton;
+       border-radius:50%;
+       text-align: center;
+       opacity: 0.8;
+-webkit-user-select: none;
+ -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+        color:$c50;
+        z-index:12;
+        @include list-slide-button-close-01;
+    }
+    .button-close{
+        width:$sizeButtonClose;
+        height:$sizeButtonClose;
+    }
+    .top-off{
+        right:-$sizeButtonClose;
+    }
+}
+
+.datalist-container{
+   position: relative;
+   list-style: none;
+   width:calc(100% + 15px);
+   .element-link{
+      @include datalist_element_01;
+      @include background-item-01;
+      &:hover{
+        @include datalist-element-hover-01;
+      }
+    }
+}

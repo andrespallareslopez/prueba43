@@ -1,0 +1,32 @@
+<div id={{id}} class="wrapper page child" >
+    <div class="nav" data-bind-html="content:onLoadContent">
+        <nav  >
+           <button type="button" id="btn-toggle-back-3" class="nav-mobile push-float-left" data-bind-style="display:cadena" data-bind-on="click:onClick" >
+             <span class="fa fa-chevron-left" ></span>
+             <span class="texto-btn" data-bind-to="text:labelback" > Back</span>
+           </button>
+        </nav>
+    </div>  
+    <div class="main" >
+       <main>
+          <div class="box content"  >
+                
+          </div>
+       </main>
+    </div>
+    <div class="footer">
+        <footer  data-bind-html='property:textTemplate'>
+            <div class="push-center-inner push-center-3x">
+                <button id="btn-ok" class="nav-mobile nav-2x push-float-left ripple">
+              <span class="fa fa-check-circle fa-2x" ></span>
+              <span class="title" >Aceptar</span>
+           </button>
+
+                <button id="btn-cancel" class="nav-mobile nav-2x push-float-right ripple">
+              <span class="fa fa-times-circle fa-2x" ></span>
+              <span class="title" >Cancelar</span>
+           </button>
+            </div>
+        </footer>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div id={{id}} class="wrapper page child" >
+    <div class="nav" data-bind-html="content:onLoadContent">
+        <nav  >
+           <button type="button" id="btn-toggle-back-3" class="nav-mobile push-float-left" data-bind-style="display:cadena" data-bind-on="click:onClick" >
+             <span class="fa fa-chevron-left" ></span>
+             <span class="texto-btn" data-bind-to="text:labelback" > Back</span>
+           </button>
+        </nav>
+    </div>  
+    <div class="main" >
+       <main>
+          <div class="box content" data-bind-html='include:src/shared/templ/slide01.html' >
+                
+          </div>
+       </main>
+    </div>
+    <div class="footer">
+        <footer  data-bind-html='property:textTemplate'>
+            
+        </footer>
+    </div>
+</div>

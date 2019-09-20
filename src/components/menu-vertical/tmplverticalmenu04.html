@@ -1,0 +1,29 @@
+     <div id="menuvertical02" class="menu-vertical-01" >
+    <div class="container-menu-scroll" >
+      <ul  class="items" >
+        {{#each menu}}
+           
+              {{#if element.subelements }}
+                <li class="parent element pr"><a class="element-link gr" href="{{element.link}}" >{{element.description}}
+                <span class="fa fa-chevron-right push-float-right" ></span>
+              {{else}}
+                <li class="element item itm"><a class="element-link el" href="{{element.link}}" >{{element.description}}
+              {{/if}}
+                </a>
+               {{#if element.subelements }}
+                     <div class="sub-menu sb" >
+                         {{#each element.subelements}}
+                            <a class="element-link el" href="{{link}}" >{{description}}</a>
+                         {{/each}}
+                     </div> 
+               {{/if}}
+            </li>
+        {{/each}} 
+      </ul>
+    </div>
+      
+      <button id="btn-slide-up" class="slide-button top" ><i class="fa fa-chevron-up fa-2x"></i></button>
+      <button id="btn-slide-down" class="slide-button bottom" ><i class="fa fa-chevron-down fa-2x"></i></button>
+      
+
+     </div>

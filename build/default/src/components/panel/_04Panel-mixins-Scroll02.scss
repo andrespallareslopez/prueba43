@@ -1,0 +1,10 @@
+
+
+$sizeButton:48px;
+
+@mixin panel-slide-button-01{
+     background: -moz-radial-gradient(center, ellipse cover,  rgba(96,108,136,0.97) 0%, rgba(96,108,136,0.97) 1%, rgba(63,76,107,1) 100%); /* FF3.6-15 */
+     background: -webkit-radial-gradient(center, ellipse cover,  rgba(96,108,136,0.97) 0%,rgba(96,108,136,0.97) 1%,rgba(63,76,107,1) 100%); /* Chrome10-25,Safari5.1-6 */
+     background: radial-gradient(ellipse at center,  rgba(96,108,136,0.97) 0%,rgba(96,108,136,0.97) 1%,rgba(63,76,107,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7606c88', endColorstr='#3f4c6b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ 
+}

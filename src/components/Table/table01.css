@@ -1,0 +1,238 @@
+.table-01 {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%; }
+  .table-01 thead,
+  .table-01 tbody,
+  .table-01 th,
+  .table-01 td,
+  .table-01 tr {
+    display: block; }
+  .table-01 td, .table-01 .cell {
+    position: relative; }
+  .table-01 .cell {
+    border: 1px solid silver;
+    padding-left: 30%; }
+  .table-01 .cell:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    padding-right: 10px;
+    text-align: right;
+    color: #E8EAF6;
+    border: 1px solid #C5CAE9;
+    background: #5C6BC0; }
+  .table-01 .dato.new-row .cell:before {
+    height: 0; }
+  .table-01 .dato.new-row.active .cell:before {
+    height: auto; }
+  .table-01 .dato {
+    margin: 8px; }
+  .table-01 .cabezera {
+    position: absolute;
+    top: -9999px;
+    left: 9999px; }
+  .table-01 .cell-align-center {
+    text-align: left; }
+  .table-01 .cell-align-left {
+    text-align: left; }
+  .table-01 .cell-align-right {
+    text-align: left; }
+  @media screen and (min-width: 768px) {
+    .table-01 {
+      width: 100%;
+      padding: 0px;
+      border: 0;
+      border-radius: 5px;
+      border-collapse: collapse; }
+      .table-01 table {
+        table-layout: auto; }
+      .table-01 thead {
+        display: table-header-group;
+        vertical-align: middle;
+        border-color: inherit; }
+      .table-01 tbody {
+        display: table-row-group;
+        vertical-align: middle;
+        border-color: inherit; }
+      .table-01 tfoot {
+        display: table-footer-group;
+        vertical-align: middle;
+        border-color: inherit; }
+      .table-01 .cabezera {
+        position: relative;
+        top: 0;
+        left: 0; }
+      .table-01 tr,
+      .table-01 .dato,
+      .table-01 .cabezera,
+      .table-01 .new-row,
+      .table-01 .pie {
+        display: table-row;
+        vertical-align: inherit;
+        border-color: inherit; }
+      .table-01 th, .table-01 .columna {
+        display: table-cell;
+        vertical-align: inherit;
+        font-weight: bold;
+        text-align: center; }
+      .table-01 td, .table-01 .cell {
+        display: table-cell;
+        vertical-align: inherit; }
+      .table-01 .cell {
+        padding: 0; }
+      .table-01 .dato {
+        background: none;
+        padding: 0;
+        margin: 0; }
+      .table-01 .cell:before {
+        position: relative;
+        background: transparent;
+        height: 0;
+        width: 0;
+        padding: 0;
+        content: '';
+        border: 0; }
+      .table-01 tr.cabezera:first-child th:first-child {
+        border-radius: 10px 0px 0px 0px; }
+      .table-01 tr.cabezera:first-child th:last-child {
+        border-radius: 0px 10px 0px 0px; }
+      .table-01 tfoot tr:last-child th:first-child {
+        border-radius: 0px 0px 0px 10px; }
+      .table-01 tfoot tr:last-child th:last-child {
+        border-radius: 0px 0px 10px 0px; }
+      .table-01 tr[class='dato']:nth-child(even) {
+        background-color: silver; }
+      .table-01 .truncate {
+        max-width: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      .table-01 .cabezera th {
+        padding: 15px 5px;
+        background: #5C6BC0;
+        background: -moz-linear-gradient(top, #5C6BC0 0%, #1A237E 100%);
+        background: -webkit-linear-gradient(top, #5C6BC0 0%, #1A237E 100%);
+        background: linear-gradient(to bottom, #5C6BC0 0%, #1A237E 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5C6BC0', endColorstr='#1A237E',GradientType=0 );
+        /* IE6-9 */
+        color: white;
+        overflow: hidden;
+        border-right: 1px solid #7986CB; }
+      .table-01 .cell {
+        border-right: 1px solid #C5CAE9; }
+      .table-01 .cell-align-center {
+        text-align: center; }
+      .table-01 .cell-align-left {
+        text-align: left; }
+      .table-01 .cell-align-right {
+        text-align: right; }
+      .table-01 .cabezera th:last-child {
+        border-right: 0px solid #7986CB; }
+      .table-01 .cabezera th a {
+        color: white;
+        text-decoration: none; }
+      .table-01 .pie th {
+        padding: 10px;
+        background: #1A237E;
+        background: -moz-linear-gradient(top, #1A237E 0%, #5C6BC0 100%);
+        background: -webkit-linear-gradient(top, #1A237E 0%, #5C6BC0 100%);
+        background: linear-gradient(to bottom, #1A237E 0%, #5C6BC0 100%);
+        background: linear-gradient(to bottom, #1A237E 0%, #5C6BC0 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1A237E', endColorstr='#5C6BC0',GradientType=0 );
+        /* IE6-9 */
+        color: white;
+        box-sizing: border-box; }
+      .table-01 .celda {
+        border: 1px dotted black;
+        padding: 0;
+        margin: 0; }
+      .table-01 .input-ctrl {
+        border: 0;
+        padding: 0;
+        margin: 0;
+        background: #9FA8DA; }
+      .table-01 .input-ctrl-new {
+        background: #C5CAE9; }
+      .table-01 .new-row .cell {
+        background: #C5CAE9;
+        border-right: 1px solid #E8EAF6; }
+      .table-01 .cell {
+        position: relative; }
+      .table-01 .current-cell-bg {
+        position: relative;
+        background: #9FA8DA !important; }
+      .table-01 .cell-background {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.3+100 */
+        background: -moz-radial-gradient(center, ellipse cover, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+        /* FF3.6-15 */
+        background: -webkit-radial-gradient(center, ellipse cover, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.14) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#4d000000',GradientType=1 );
+        /* IE6-9 fallback on horizontal gradient */ }
+      .table-01 .cell-background-1 {
+        background-image: repeating-linear-gradient(315deg, #E8EAF6, #E8EAF6 5px, #C5CAE9 5px, #C5CAE9 10px); }
+      .table-01 .cell-background-2 {
+        opacity: 1;
+        background: repeating-linear-gradient(315deg, #7986CB, #7986CB 1px, transparent 1px, transparent 10px), linear-gradient(to bottom, #5C6BC0 0%, #1A237E 100%) !important; }
+      .table-01 .disabled {
+        cursor: not-allowed; }
+      .table-01 .no-select {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; }
+      .table-01 .warning {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        vertical-align: middle;
+        z-index: 20;
+        cursor: pointer; }
+      .table-01 .fa-warning {
+        color: orangered; }
+      .table-01 .dato {
+        background-color: white; }
+      .table-01 .zebra {
+        background-color: silver; }
+      .table-01 tr[class='dato'] td:first-child {
+        border-left: 2px solid silver; }
+      .table-01 tr[class='dato'] td:last-child {
+        border-right: 2px solid silver; }
+      .table-01 tr[class='dato zebra']:hover, .table-01 tr[class='dato']:hover {
+        background-color: yellow; }
+      .table-01 .btn-cursor {
+        cursor: pointer; } }
+
+[class*="animate-"] .ws-popover {
+  overflow: visible; }
+
+[class*="animate-"] .ws-popover.ws-po-visible .ws-po-outerbox {
+  opacity: 1;
+  -webkit-transform: translate(0, 0) scale(1);
+  transform: translate(0, 0) scale(1); }
+
+.animate-2 .ws-popover {
+  overflow: visible;
+  -webkit-perspective: 600px;
+  -webkit-transform-style: preserve-3d;
+  perspective: 600px;
+  transform-style: preserve-3d; }
+
+.animate-2 .ws-po-outerbox {
+  -webkit-transform: rotateX(-60deg);
+  -webkit-transform-origin: 50% 0 0;
+  transform: rotateX(-60deg);
+  transform-origin: 50% 0 0; }
+
+.animate-2 [data-vertical="bottom"] .ws-po-outerbox {
+  -webkit-transform: rotateX(60deg);
+  -webkit-transform-origin: -50% 100% 0;
+  transform-origin: -50% 100% 0;
+  transform: rotateX(60deg); }
+
+/*# sourceMappingURL=table01.css.map */

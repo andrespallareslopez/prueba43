@@ -1,0 +1,1 @@
+import"/src/components/layouts/03layout02/03layout02.css";import"/src/components/layouts/03layout02/03transition02.css";import"/src/components/effects/03rippleEffects01.css";import"/src/WebComponents/layout.js";

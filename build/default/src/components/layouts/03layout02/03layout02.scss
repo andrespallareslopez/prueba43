@@ -1,0 +1,364 @@
+
+//************************************
+
+@import "../../../shared/scss/variables";
+
+@import "../../../shared/scss/reset";
+
+
+//****************************************
+button::-moz-focus-inner {
+  border: 0;
+}
+button:focus{
+     outline: 0;
+}
+button:active{
+    outline:0;
+}
+
+html,body{
+    height: 100%;
+
+}
+input:focus{
+    outline: none;
+}
+.container,.lyt03layout02{
+    display:block;
+    position:relative;
+    max-width:$maxpagew;  /*importante para que se centre */
+    width:100%;
+    min-height: 100vh;
+    margin:0 auto;
+    overflow:hidden;
+    overflow-y:auto;  
+}
+.lyt03layout02{
+
+        .pages {
+            display:block;
+            position:relative;
+            width:100%;
+            background: $c50;
+           // min-height:100vh;
+        }
+
+        .main-body{
+            display:block;
+            position:relative;
+            width:100%;
+           
+            //height:100vh;
+               //height:100vh;
+       // @media screen and  (min-width:768px){
+            
+            //min-height:calc(100vh - #{$headerHeight});
+            
+          
+           
+      //  }
+          
+        }
+
+        .wrapper{
+            display:block;
+            
+            max-width:$maxpagew;
+            width:100%;
+            min-width: $minpage;
+         
+          
+           //height:100vh;
+            
+           
+        }
+
+        .page{
+        //display:none;
+        position:relative;
+        top:0;
+        left:0;
+        
+            @media screen and (min-width:768px){
+                margin-left: #{$asidew};
+                width:calc(100% - #{$asidew})
+            }
+        
+        }
+       
+        
+        .menu-area{
+        
+        display:block;
+        @include background-menu-area-01;
+        @include shadow02;
+        margin-left: -#{$asidewdesplaz};
+        width: #{$asidew};
+        height:100%;
+        @media screen and  (min-width:768px){
+            
+           height:100%;
+            
+            margin-left:0;
+            
+            
+             
+        }
+        
+          position:absolute;
+          padding-top:0px;
+          transition: all 0.3s linear;
+          //overflow: hidden;
+          z-index:25;
+        }
+        
+        header + .menu-area{
+            @media screen and  (min-width:768px){
+                //height: calc(100vh - #{$headerHeight});
+                height:calc(100% - #{$headerHeight});
+                //height:100%;
+            }
+        }
+        
+        .wrapper.page.root{
+            transition: all 0.3s ease-in-out;
+        }
+        header{
+            display:none;
+            height:15%;
+            height: $headerHeight;
+            background:$c500;
+        }
+        .nav{
+        position:relative;
+            display:block;
+            width:100%;
+        }
+
+        nav{
+            
+            display:block;
+            width:100%;
+            height:$nav;
+         
+            @include background01;
+            @include shadowbottom01;
+            
+        }
+        .main{
+            position:relative;
+            display:block;
+            width:100%;
+           
+
+            //height:calc(100vh - #{$nav} - #{$footer});
+        
+            
+            /*overflow: hidden;*/
+        }
+
+        main{
+            /* tiene que ser table --> si no menu vertical no escalara hasta abajo */
+            position:relative;  /* importante para navegadores mobiles */
+            width:100%;
+            display:block;
+               
+            @media screen and (min-width:321px){
+                min-height: 250px;
+            }
+            //height:calc(100vh - #{$nav} - #{$footer});
+            
+            //overflow:hidden;
+            
+        }
+        .content-no-footer{
+            display:block;
+            position:relative;
+            padding:10px;
+            width:100%;
+            
+            //height:calc(100% - #{$nav} - #{$footer});
+            height:calc(100vh - #{$nav});
+            //min-height: 250px;
+            min-height: 100%;
+            @media screen and  (min-width:768px){
+              height:calc(100vh - #{$headerHeight} - #{$nav});
+            }
+            
+            min-width: $minpage;
+            background:transparent;
+            // background: $c50;
+        }
+        .content-no-nav-no-footer{
+             display:block;
+            position:relative;
+            padding:10px;
+            width:100%;
+            
+            
+            //height:calc(100% - #{$nav} - #{$footer});
+            height:calc(100vh);
+            min-height: 250px;
+            @media screen and  (min-width:768px){
+              height:calc(100vh - #{$headerHeight});
+            }
+            
+            min-width: $minpage;
+            background:transparent;
+             //background: $c50;
+        }
+        
+        .content{
+            display:block;
+            position:relative;
+            padding:5px;
+            width:100%;
+            
+            
+            //height:calc(100vh - #{$nav} - #{$footer});
+            //min-height: 250px;
+            min-height: 100%;
+            min-height:calc(100vh - #{$nav} - #{$footer});
+            //@media screen and (min-width:321px){
+            //    min-height: 250px;
+            //}
+          
+            @media screen and  (min-width:768px){
+              min-height:calc(100vh - #{$headerHeight} - #{$nav} - #{$footer});
+            }
+            
+            min-width: $minpage;
+            background:transparent;
+              // background: $c50;
+            
+        }
+        .content-no-nav{
+            display:block;
+            position:relative;
+            padding:10px;
+            width:100%;
+            
+            
+            //height:calc(100% - #{$nav} - #{$footer});
+            height:calc(100vh - #{$footer});
+            min-height: 250px;
+            @media screen and  (min-width:768px){
+              height:calc(100vh - #{$headerHeight} - #{$footer});
+            }
+            
+            min-width: $minpage;
+            background:transparent;
+            // background: $c50;
+        }
+
+        .right{
+            display:none;
+            width: $asidew;
+        }
+        .footer{
+            position:relative;
+            display:block;
+            width:100%;
+            
+        }
+        footer {
+            width:100%;
+            @media screen and  (min-width:768px){
+               width:calc(100% - 0px);
+            }
+            
+            display:block;
+            height: $footer;
+            @include background01-inv;
+            @include shadowtop01;
+        
+        }
+        
+        .section-open .menu-area{
+           margin-left:0px;
+         
+        }
+        .section-open .wrapper.page.root{
+            margin-left: #{$asidew};
+            width:calc(100% - #{$asidew});
+        }
+
+        .push-float-left{
+            float:left;
+        }
+        .push-float-right{
+            float:right;
+        }
+        .push-center-inner{
+          position:relative;
+          /*importante para que se centre */
+          margin-left: auto;
+          margin-right: auto;
+          overflow:hidden;
+        }
+        .push-center-1x{
+          max-width:65px; 
+        }
+        .push-center-2x{
+          max-width:130px; 
+        }
+        .push-center-3x{
+            max-width:240px;
+            @media screen and (min-width:768px){
+                left:0px;
+            }
+        }
+        .push-center-inline-3x{
+            display:inline-block;
+            max-width:240px;
+            left:calc(50% - 100px);
+        }
+        @media screen and (min-width:768px){
+        html,body{
+
+          background: white;
+        }    
+        #btn-toggle-left{
+            display:none;
+        }
+        #btn-toggle-right{
+            display:none;
+        }
+        #btn-toggle-sign-in{
+            z-index:50;
+        }
+        #frmsearch01{
+            z-index:50;
+        }
+       
+        .logo{
+            width:10%;
+            height: 100%;
+            float:left;  
+        }
+        .logo svg{
+            
+            width:100%;
+            height:100%;
+        }
+        .title-application{
+            color:$c50;
+            float:left;
+            top:-50%;
+            transform:translateY(50%);
+        }
+        header{
+            display:block; 
+            position: position;
+            width:100%;
+            
+
+            top:0;
+            left:0;
+            
+        }
+    }
+
+
+}

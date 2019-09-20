@@ -1,0 +1,35 @@
+.footer-menu {
+  position: absolute;
+  /*top:-200px;*/
+  left: 0;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  padding: 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#673ab7+0,9575cd+100 */
+  background: #3F51B5;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #3F51B5 0%, #7986CB 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #3F51B5 0%, #7986CB 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #3F51B5 0%, #7986CB 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3F51B5', endColorstr='#7986CB',GradientType=0 );
+  /* IE6-9 */
+  top: 0px;
+  opacity: 0;
+  -webkit-transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 15; }
+  @media (min-width: 768px) {
+    .footer-menu {
+      width: calc(100% - 200px);
+      left: 200px; } }
+
+.expand-footer {
+  height: 200px;
+  top: -200px;
+  opacity: 1; }
+
+/*# sourceMappingURL=04footermenu01.css.map */

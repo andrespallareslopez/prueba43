@@ -1,0 +1,125 @@
+.form-login {
+  font-family: "Roboto";
+  /*display:none;*/
+  position: absolute;
+  width: 98%;
+  max-width: 450px;
+  top: 60px;
+  left: 50%;
+  -webkit-box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, 0.75);
+  z-index: 999;
+  height: 220px;
+  transform: translate(-50%, -260%);
+  transition: transform 0.3s ease-in-out; }
+
+.form-background {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.3+100 */
+  background: -moz-radial-gradient(center, ellipse cover, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#4d000000',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  display: block;
+  width: 100%;
+  height: 220px; }
+
+.form-background-1 {
+  background-image: repeating-linear-gradient(315deg, #E8EAF6, #E8EAF6 40px, #7986CB 40px, #7986CB 80px); }
+
+.form-background-2 {
+  background-image: repeating-linear-gradient(315deg, #3B3E42, #3B3E42 30px, yellow 30px, yellow 60px); }
+
+.form-login.open-login {
+  /*display:block;*/
+  visibility: visible;
+  transform: translate(-50%, 0%); }
+
+.form-login .group {
+  position: relative;
+  top: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  background: transparent; }
+
+.form-login input {
+  color: #303F9F;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  background: #E8EAF6;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #1A237E;
+  -webkit-box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, 0.75); }
+
+.form-login input:focus {
+  outline: none; }
+
+.form-login label {
+  color: #1A237E;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all; }
+
+.form-login input:focus ~ label, .form-login input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #E8EAF6; }
+
+.form-login .bar {
+  position: relative;
+  display: block;
+  width: 100%; }
+
+.form-login .bar:before, .form-login .bar:after {
+  content: '';
+  height: 3px;
+  width: 0;
+  bottom: 2px;
+  position: absolute;
+  background: #1A237E;
+  transition: 0.2s ease all; }
+
+.form-login .bar:before {
+  left: 50%; }
+
+.form-login .bar:after {
+  right: 50%; }
+
+.form-login input:focus ~ .bar:before, .form-login input:focus ~ .bar:after {
+  width: 50%; }
+
+.form-login .hightlight {
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  top: 5%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  z-index: 999; }
+
+.form-login input:focus ~ .hightlight {
+  background: #7986CB;
+  animation: inputHightlighter 0.3s ease; }
+
+@keyframes inputHightlighter {
+  from {
+    background: #7986CB; }
+  to {
+    width: 0;
+    background: transparent; } }
+
+/*# sourceMappingURL=03form-login.css.map */

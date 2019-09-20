@@ -1,0 +1,61 @@
+@import "../../shared/scss/variables";
+
+.page-box{
+    position:relative;
+    width:100%;
+   
+    height:32px;
+    background:transparent;
+    z-index:10;
+    padding-top:8px;
+    //top:50%;
+    //-webkit-transform:translateY(-50%);
+    //transform:translateY(-50%);
+    .page-controls{
+     position:relative;  //importante que sea relative junto con inline-block  
+     display: inline-block;   
+     left:50%;
+     -webkit-transform:translateY(-50%);
+     transform:translateX(-50%);
+     
+     height:32px;
+     //margin:0 auto;
+     //top:50%;
+        .page-button{
+        cursor:pointer;
+        text-decoration: none;
+        position:relative;
+        border-radius: 2px;
+        //border:0.5px solid $c50;
+        background:$c50;
+        outline:none;
+        //font-size:16px;
+        display:inline-block;
+        width:32px;
+        height:32px;
+        line-height: 32px;
+        color:$c700;
+        //border:3px solid green;
+        margin:0 1px;
+        //top:50%;
+        //-webkit-transform:translateY(-50%);
+        //transform:translateY(-50%);
+        text-align: center;
+        
+        
+        //-webkit-box-shadow: 3px 5px 10px 1px rgba(0,0,0,0.75);
+        //-moz-box-shadow: 3px 5px 10px 1px rgba(0,0,0,0.75);
+        //box-shadow: 3px 5px 10px 1px rgba(0,0,0,0.55);
+        
+          &:hover{
+             background:$c300;
+             color:$c50;
+          }
+          &.current{
+             background:$c500;
+             color:$c50;  
+          }
+        }
+        
+    } 
+}

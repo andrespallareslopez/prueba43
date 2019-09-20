@@ -1,0 +1,22 @@
+
+<ul>
+
+ {{#each sizes.pages}}
+  <li>
+    <div class="list-grp-buttons list-center" > 
+     {{#each slides}}  
+         <a class="list-grp-button box-shadow-3" href="#"  >
+                      <div class="list-grp-content-top" >
+                          <span class="list-grp-content-text list-grp-context-text-center" >{{description}}</span>
+                      </div>
+                      <div class="list-grp-content-bottom" >
+                         <span class="list-grp-content-text" >{{Precio}} Eur</span>    
+                      </div>    
+         </a>
+         
+     {{/each}}
+    </div> 
+  </li>
+  {{/each}}
+ 
+</ul>

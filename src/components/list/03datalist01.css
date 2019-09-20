@@ -1,0 +1,81 @@
+.datalist {
+  width: 300px;
+  height: 150px;
+  margin-top: 10px;
+  background: #5C6BC0; }
+  .datalist .panel-datalist {
+    width: 300px;
+    height: 150px;
+    background: #5C6BC0; }
+  .datalist .slide-button-panel {
+    display: block;
+    position: absolute;
+    background: transparent;
+    cursor: pointer;
+    border: 0px;
+    margin: 0px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    opacity: 0.8;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #E8EAF6;
+    z-index: 12;
+    background: -moz-radial-gradient(center, ellipse cover, rgba(96, 108, 136, 0.97) 0%, rgba(96, 108, 136, 0.97) 1%, #3f4c6b 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(96, 108, 136, 0.97) 0%, rgba(96, 108, 136, 0.97) 1%, #3f4c6b 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(96, 108, 136, 0.97) 0%, rgba(96, 108, 136, 0.97) 1%, #3f4c6b 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7606c88', endColorstr='#3f4c6b',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */ }
+  .datalist .button-close {
+    width: 30px;
+    height: 30px; }
+  .datalist .top-off {
+    right: -30px; }
+
+.datalist-container {
+  position: relative;
+  list-style: none;
+  width: calc(100% + 15px); }
+  .datalist-container .element-link {
+    padding: 5px;
+    padding-left: 25px;
+    border-top: 1px solid #C5CAE9;
+    border-bottom: 1px solid #1A237E;
+    display: block;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    color: #E8EAF6;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px darkslategrey;
+    background: #3D5AFE;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #3D5AFE 0%, #304FFE 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #3D5AFE 0%, #304FFE 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #3D5AFE 0%, #304FFE 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3D5AFE', endColorstr='#304FFE',GradientType=0 );
+    /* IE6-9 */ }
+    .datalist-container .element-link:hover {
+      background: -moz-radial-gradient(center, ellipse cover, rgba(96, 108, 136, 0.97) 0%, rgba(96, 108, 136, 0.97) 1%, #3f4c6b 100%);
+      /* FF3.6-15 */
+      background: -webkit-radial-gradient(center, ellipse cover, rgba(96, 108, 136, 0.97) 0%, rgba(96, 108, 136, 0.97) 1%, #3f4c6b 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: radial-gradient(ellipse at center, rgba(96, 108, 136, 0.97) 0%, rgba(96, 108, 136, 0.97) 1%, #3f4c6b 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7606c88', endColorstr='#3f4c6b',GradientType=1 );
+      /* IE6-9 fallback on horizontal gradient */ }
+
+/*# sourceMappingURL=03datalist01.css.map */

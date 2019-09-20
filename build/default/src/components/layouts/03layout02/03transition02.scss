@@ -1,0 +1,60 @@
+@import "../../../shared/scss/variables";
+
+.lyt03layout02{
+
+.page.root{
+    
+    visibility: visible;
+
+}
+.child,.child-2{
+    display: block;
+    position:absolute;
+    /*top:0;*/
+    /*left:100%;*/
+    transform:translateX(100%);
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    overflow-y: auto;
+    opacity:0;
+    
+    transition:all 0.3s ease-in-out;
+    z-index:50;
+    .box.content{
+      background: $c50;
+    }
+    .nav-mobile{
+        width:100px;
+    }
+    .nav-mobile-search{
+        width:50px;
+    }
+}
+
+
+.child.animation{
+     opacity:1;
+     transform:translateX(0%);
+     @media (min-width:768px){
+   
+        width:calc(100% - 200px);
+    } 
+  
+}
+.child.animation.right,.child-2.animacion.right{
+   /*z-index:999;*/
+    /*width:100%;*/
+     opacity:1;
+    /*left:0%; */
+    /* aqui es donde deberia ir el translate */
+    transform:translateX(0%);
+
+}
+
+
+@media (min-width:768px){
+   
+  
+}
+}

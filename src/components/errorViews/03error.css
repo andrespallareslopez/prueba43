@@ -1,0 +1,33 @@
+.err-ctlr-01 {
+  position: relative;
+  min-width: 256px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 40%;
+  left: calc(50% - 256px);
+  transform: translateY(-40%); }
+
+.err-ctlr-02 {
+  position: relative;
+  min-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 40%;
+  left: calc(50% - 256px);
+  /*right:calc(12% - 128px);*/
+  transform: translateY(-40%); }
+
+.err-ctlr-01 img {
+  width: 256px;
+  height: 256px;
+  min-width: 128px;
+  min-height: 128px; }
+
+@media (min-width: 768px) {
+  .err-ctlr-01 {
+    left: calc(50% - 128px); }
+
+  .err-ctlr-02 {
+    left: calc(50% - 128px); } }
+
+/*# sourceMappingURL=03error.css.map */

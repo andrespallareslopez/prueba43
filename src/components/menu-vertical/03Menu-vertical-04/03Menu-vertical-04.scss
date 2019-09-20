@@ -1,0 +1,174 @@
+@import "../../../shared/scss/variables";
+
+.menu-vertical-04{
+
+    width: #{$asidew};
+    top:0;
+    position:absolute;
+    @include shadow01;
+    @include menu-vertical-container-01;
+     /*margin-left: -#{$asidewdesplaz};*/ 
+    margin-left: 0px;
+    /*transition: all 0s ease-in-out;*/
+    & .text-back{
+        margin-left:10px;
+    }
+    & li{
+        display:block;
+        position:relative;
+    }
+    &.open-panel{
+      & li.pr.expand  .sub-menu {
+        transform:translate3D(0%,0,0);
+      }
+    }
+    &.open-panel li.pr:not(.expand),&.open-panel .element.no-pr{
+        display:none;
+    }
+    & .element-link{
+       @include menu-vertical-principal-structure-element-01;
+       @include background-menu-vertical-01;
+       height: 100%;
+     
+       
+       &.current-menu{
+          @include background-menu-vertical-parent-hover-01;  
+       }
+       &.current-element{
+            @include background-menu-vertical-item-hover-01; 
+            &:before{
+                display:block;
+                position:absolute;
+                top:0;
+                left:0;
+                content:"";
+                width:100%;
+                height:52px;
+                border-left:7px solid yellow;
+                padding:0; 
+            }
+       }  //end current-element 
+    }
+    & .parent{
+          & > .element-link{
+            &:hover{
+               @include background-menu-vertical-parent-hover-01;
+          }
+        }
+    }
+    & .item {
+        .element-link{
+           &:hover{
+             @include background-menu-vertical-item-hover-01;
+           }
+        }
+    }
+    & .back-element{
+       @include menu-vertical-principal-structure-element-01;
+       @include background-menu-vertical-01;
+    }
+    & .sub-menu{
+        position:absolute;
+           
+        width:100%;
+        list-style: none;
+        display:block;
+        
+        
+        @include background-menu-area-01;
+        
+        top:0;
+        
+        height: 100%;
+        z-index:0; 
+        
+        transform: translate3d(-100%,0,0);
+        transition: all 0.2s ease-in-out;
+        li {
+            display:block;
+            position:relative;
+        }
+        .element-link{
+            @include background-menu-vertical-item-01;
+            &:hover{
+               @include background-menu-vertical-item-hover-01;
+            }
+        }
+    }
+    & .element{
+        width:100%;
+    }   
+}
+
+.section-open .menu-vertical-04{
+    height:100%;
+    margin-left:0px;
+}
+.menu-vertical-04 li>a.expand.expand-right + .sub-menu .animation-delay-01{
+    animation:toright 0.3s both cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 100ms;
+}
+
+.menu-vertical-04 li>a.expand.expand-right + .sub-menu .animation-delay-02{
+    animation:toright 0.3s both cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 250ms;
+}
+.menu-vertical-04 li>a.expand.expand-right + .sub-menu .animation-delay-03{
+    animation:toright 0.3s both cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 350ms;
+}
+.menu-vertical-04 li>a.expand.expand-right + .sub-menu .animation-delay-04{
+    animation:toright 0.3s both cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 450ms;
+}
+.menu-vertical-04 li>a.expand.expand-right + .sub-menu .animation-delay-05{
+    animation:toright 0.3s both cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 550ms;
+}
+.menu-vertical-04 li>a.expand.expand-right + .sub-menu .animation-delay-06{
+    animation:toright 0.3s both cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 650ms;
+}
+/************************************************************/
+.menu-vertical-04 li>a.expand + .sub-menu .animation-delay-01{
+     animation:toleft 0.3s both cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 100ms;
+}
+.menu-vertical-04 li>a.expand + .sub-menu .animation-delay-02{
+     animation:toleft 0.3s both cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 200ms;
+}
+.menu-vertical-04 li>a.expand + .sub-menu .animation-delay-03{
+     animation:toleft 0.3s both cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay:300ms;
+}
+.menu-vertical-04 li>a.expand + .sub-menu .animation-delay-04{
+     animation:toleft 0.3s both cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay:400ms;
+}
+.menu-vertical-04 li>a.expand + .sub-menu .animation-delay-05{ 
+    animation:toleft 0.3s both cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay:500ms;
+}
+.menu-vertical-04 li>a.expand + .sub-menu .animation-delay-06{ 
+    animation:toleft 0.3s both cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay:600ms;
+}
+
+@keyframes toleft{
+    from{
+        transform:translate3d(-100%,0,0);
+    }
+    to {
+        transform:translate3d(0%,0,0);
+    }
+}
+
+@keyframes toright{
+    from {
+        transform:translate3d(0%,0,0);
+    }
+    to {
+        transform:translate3d(-100%,0,0);
+    }
+}

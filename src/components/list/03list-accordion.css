@@ -1,0 +1,54 @@
+.list-acordion {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 2px; }
+  .list-acordion .list-item .element-link {
+    background: #7986CB;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #7986CB 0%, #5C6BC0 45%, #3F51B5 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #7986CB 0%, #5C6BC0 45%, #3F51B5 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #7986CB 0%, #5C6BC0 45%, #3F51B5 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7986CB', endColorstr='#3F51B5',GradientType=0 );
+    /* IE6-9 */
+    padding: 10px;
+    border-top: 1px solid #E8EAF6;
+    border-bottom: 1px solid #303F9F;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #E8EAF6;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px darkslategrey; }
+    .list-acordion .list-item .element-link.expand + .panel-item {
+      display: block;
+      height: 100%;
+      color: #E8EAF6;
+      opacity: 1;
+      color: #1A237E;
+      padding: 5px;
+      border: 1px solid #3949AB; }
+    .list-acordion .list-item .element-link.expand .fa {
+      transform: rotate(90deg); }
+  .list-acordion .list-item .panel-item {
+    overflow: hidden;
+    /*importante para funcionar el submenu si no luego hay problemas con el siguiente elemento y a la hora de seleccionar un elemento o elegirlo el panel se pone encima y del siguiente elemento */
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    height: 0;
+    border: 0;
+    transition: all 0.1s ease-in-out; }
+  .list-acordion .list-item .panel-item p {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+
+/*# sourceMappingURL=03list-accordion.css.map */

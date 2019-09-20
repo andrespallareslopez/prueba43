@@ -1,0 +1,66 @@
+
+
+
+ul.menu-vertical-03{
+    display:block;
+    position:relative;
+    /*position:relative;  prohibido poner position ni relative ni absolute no
+    funcionara bien la transiciones en los mobiles */
+    list-style: none;
+    width:200px;
+    margin-left:-200px;
+    transition: margin-left 0.3s ease-in-out;
+    
+    top:0;
+    height:100%;
+    
+}
+ul.menu-vertical-03 li{
+    
+    background: #9575cd; /* Old browsers */
+    background: -moz-linear-gradient(top,  #9575cd 0%, #7e57c2 24%, #673ab7 88%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #9575cd 0%,#7e57c2 24%,#673ab7 88%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #9575cd 0%,#7e57c2 24%,#673ab7 88%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9575cd', endColorstr='#673ab7',GradientType=0 ); /* IE6-9 */ 
+}
+ul.menu-vertical-03 li a{
+    font-family: Helvetica,Arial,sans-serif ;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px darkslategrey;
+    padding:15px;
+    border-top:1px solid #D1C4E9;
+    border-bottom:1px solid #311B92;
+    display:block;
+    width:100%;
+    text-decoration: none;
+    color:#EDE7F6;
+}
+ul.menu-vertical-03 li.parent{
+  
+}
+ul.menu-vertical-03 li ul{
+    overflow: hidden;
+    position: absolute;
+    width:100%;
+    max-width:200px;
+    list-style: none;
+    display:block;
+    top:0px;
+    
+    transform:translate3D(-150%,0,0);
+    height: calc(100%);
+    transition:transform 0.3s ease-in-out,height 0.3s ease-in-out;
+}
+
+.section-open ul.menu-vertical-03{
+    height:100%;
+    margin-left:0px;
+    transition:all 0.2s ease-in-out; 
+}
+.section-open.step3 ul.menu-vertical-03{
+    margin-left:-200px;
+}
+ul.menu-vertical-03 li>a.expand + ul.sub-menu{
+    transform:translate3D(0%,0,0);
+   height: calc(100%);
+}

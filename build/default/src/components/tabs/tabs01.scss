@@ -1,0 +1,139 @@
+@import "../../shared/scss/variables";
+
+.tab-container{
+    position:relative;
+    display:block;
+    position:relative;
+    border:0px solid gray;
+    
+    width:100%;
+    height:100%;
+    min-height: 100%;
+    
+    height:calc(100vh - #{$footer} - #{$nav} - 30px);
+    min-height:calc(100vh - #{$footer} - #{$nav} - 30px);
+    @media screen and (min-width:768px){
+       height:calc(100vh - #{$headerHeight} - #{$footer} - #{$nav} - 30px);
+       min-height:calc(100vh - #{$headerHeight} - #{$footer} - #{$nav} - 30px);
+    }
+    margin:0 auto;
+    
+    bottom: 0px;
+    -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+    .tab-items{
+        display:block;
+        position:relative;
+        margin:0 auto;
+        width:100%;
+        height:100%;
+        min-height:100%;
+   
+        height:calc(100vh - #{$footer} - #{$nav} - 30px);
+        min-height:calc(100vh - #{$footer} - #{$nav} - 30px);
+        @media screen and (min-width:768px){
+          height:calc(100vh - #{$headerHeight} - #{$footer} - #{$nav} - 30px);
+          min-height:calc(100vh - #{$headerHeight} - #{$footer} - #{$nav} - 30px);
+        }
+        border:0px solid gray;
+        overflow:hidden; 
+    }
+    ul{
+        display:block;
+       position:relative;
+       width:100%;
+       /*width:400%;*/
+       height:100%;
+       min-height:100%;
+    
+       height:calc(100vh - #{$footer} - #{$nav} - 30px);
+       min-height:calc(100vh - #{$footer} - #{$nav} - 30px);
+       @media screen and (min-width:768px){
+         height:calc(100vh - #{$headerHeight} - #{$footer} - #{$nav} - 30px);
+         min-height:calc(100vh - #{$headerHeight} - #{$footer} - #{$nav} - 30px);
+       }
+       list-style: none;
+       border:0px red solid;
+       transform:translateX(0%);
+       -webkit-transform: translateX(0%);
+       transition: all 0.3s ease-in-out;
+       -webkit-transition: all 0.3s ease-in-out;
+       visibility: visible; /*para la carga tiene que estar oculto sino efectos indeseados en la carga luego con javascript lo ponemos visible*/
+       
+       margin:0 auto; 
+       li.tab-item{
+        display:block;
+        overflow: hidden;
+        box-sizing: border-box;
+        position:relative;
+        
+         /*width:25%; este valor cambiara con javascript */
+       height:calc(100% - 45px);
+
+       min-height: calc(100% - 45px);
+       
+ 
+       height:calc(100vh - #{$footer} - #{$nav} - 45px);
+       min-height:calc(100vh - #{$footer} - #{$nav} - 45px);
+       @media screen and (min-width:768px){
+         height:calc(100vh - #{$headerHeight} - #{$footer} - #{$nav} - 45px);
+         min-height:calc(100vh - #{$headerHeight} - #{$footer} - #{$nav} - 45px);
+       }
+       border:0px solid gray;
+       float:left;
+       }
+    }
+    .tab-controls{
+      position:relative;
+      width:100%;
+    
+      height:30px;
+      background:transparent;
+      z-index:10;
+      border:0px solid gray;
+      //margin:0 auto;
+      top:0px;
+      //transform:translateY(-30px);
+      //-webkit-transform:translateY(-30px);
+      a{
+        position:relative;
+        //bottom:0;
+        top:0;
+        text-decoration: none;
+        display:inline-block;
+        width:100px;
+        height:30px;
+        line-height: 30px;
+      
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        //border-radius:15px;
+        border-top:1px solid $c700;
+        border-left: 1px solid $c700;
+        border-right: 1px solid $c700;
+        //border:1px solid green;
+        //margin:0 2px;
+        font-family: Helvetica,Arial,sans-serif ;
+        font-weight: bold;
+        text-shadow: 1px 1px 0px black;
+        text-align: center;
+        //top:50%;
+        //transform:translateY(-50%);
+        //-webkit-transform:translateY(-50%);
+        
+        color: $c50;
+        @include background01-inv;
+        //@include background01;
+        //@include background-menu-horizontal-element-01;
+        //-webkit-box-shadow: 3px 5px 10px 1px rgba(0,0,0,0.75);
+        ///-moz-box-shadow: 3px 5px 10px 1px rgba(0,0,0,0.75);
+        // box-shadow: 3px 5px 10px 1px rgba(0,0,0,0.55); 
+       &.current{
+          @include  background-menu-vertical-01;
+          color: orange;
+       }   
+      }
+    }
+}

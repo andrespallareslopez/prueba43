@@ -1,0 +1,328 @@
+@import "../../shared/scss/variables";
+
+.table-01{
+ 
+   display:block;
+      
+   position:relative;
+   //min-height: 100%;
+   //min-height: 100vh;
+   height:100%;
+   width: 100%; 
+   thead,
+   tbody,
+   th,
+   td,
+   tr{
+       display:block;
+   }
+   td,.cell{
+       position:relative;
+   }
+   .cell{
+       border:1px solid silver;
+       padding-left:30%;
+   }
+  
+   .cell:before{
+       position:absolute;
+       top:0;
+       left:0;
+       //bottom:0;
+       //right:0;
+       width:25%;
+    
+       padding-right:10px;
+       text-align: right;
+       color:$c50;
+       border:1px solid $c100;
+       background:$c400;
+       
+       //background: -moz-linear-gradient(top,$c400 0%,$c900 100%);
+       //background: -webkit-linear-gradient(top, $c400 0%,$c900 100%);
+       //background: linear-gradient(to bottom, #{$c400} 0%,#{$c900} 100%);
+       //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$c400}', endColorstr='#{$c900}',GradientType=0 ); /* IE6-9 */ 
+   }
+  .dato.new-row .cell:before{
+      height:0;
+  }
+  .dato.new-row.active .cell:before{
+      height:auto;
+  }
+   .dato{
+      margin:8px; 
+   }
+   .cabezera{
+       position:absolute;
+       top:-9999px;
+       left:9999px;
+   }
+    .cell-align-center{
+      text-align:left;
+    }
+    .cell-align-left{
+      text-align: left;
+    }
+    .cell-align-right{
+      text-align:left;
+    } 
+    
+   
+   
+   
+   @media screen and (min-width:768px){  
+       
+    table{
+        table-layout: auto;
+    }
+    thead{
+        display:table-header-group;
+        vertical-align:middle;
+        border-color:inherit;
+    }
+    tbody{
+        display:table-row-group;
+        vertical-align:middle;
+        border-color:inherit;
+    }
+    tfoot{
+        display:table-footer-group;
+        vertical-align:middle;
+        border-color:inherit;
+    }
+    .cabezera{
+        position:relative;
+        top:0;
+        left:0;
+    }
+   
+    tr,
+    .dato,
+    .cabezera,
+    .new-row,
+    .pie{
+        display:table-row;
+        vertical-align:inherit;
+        border-color:inherit;
+    }
+    th,.columna {
+        display:table-cell;
+        vertical-align:inherit;
+        font-weight:bold;
+        text-align:center;
+    }
+    td, .cell {
+        display:table-cell;
+        vertical-align:inherit;
+      
+    }
+    .cell{
+        padding:0;
+    }
+    .dato{
+        background:none;
+        padding:0;
+        margin:0;
+    }
+    .cell:before{
+        position:relative;
+        background:transparent;
+        height: 0;
+        width:0;
+        padding:0;
+        content:'';
+        border:0;
+    }
+  
+    width: 100%;
+    //height: auto;
+        
+    padding: 0px;
+    //border:0px solid silver;
+    border:0;
+    border-radius:5px;
+    //border-spacing: 0px; 
+    border-collapse: collapse;    
+        
+        tr.cabezera:first-child th:first-child{
+            border-radius:10px 0px 0px 0px;
+        }
+        tr.cabezera:first-child th:last-child{
+            border-radius:0px 10px 0px 0px;
+        }
+        
+        tfoot{
+        tr:last-child th:first-child{
+            border-radius:0px 0px 0px 10px;
+        }
+        tr:last-child th:last-child{
+            border-radius:0px 0px 10px 0px;
+        }
+        }
+        tr[class='dato']:nth-child(even){
+            background-color:silver;
+        }
+        .truncate{
+            max-width:0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .cabezera th{
+            padding: 15px 5px;
+            background:$c400;
+            background: -moz-linear-gradient(top,$c400 0%,$c900 100%);
+            background: -webkit-linear-gradient(top, $c400 0%,$c900 100%);
+            background: linear-gradient(to bottom, #{$c400} 0%,#{$c900} 100%);
+             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$c400}', endColorstr='#{$c900}',GradientType=0 ); /* IE6-9 */
+            // border:1px solid silver;
+            color:white;
+            overflow:hidden;
+            border-right: 1px solid $c300;
+        }
+        .cell{
+            border-right: 1px solid $c100;
+        }
+        .cell-align-center{
+            text-align:center;
+        }
+        .cell-align-left{
+            text-align: left;
+        }
+        .cell-align-right{
+            text-align:right;
+        }
+        .cabezera th:last-child{
+            border-right:0px solid $c300;
+        }
+        .cabezera th a{
+            color:white;
+            text-decoration: none;
+        }
+        .pie th{
+            padding: 10px;
+            background:$c900;
+            background: -moz-linear-gradient(top,$c900 0%,$c400 100%);
+            background: -webkit-linear-gradient(top, $c900 0%,$c400 100%);
+            background: linear-gradient(to bottom, #{$c900} 0%,#{$c400} 100%);
+            background: linear-gradient(to bottom, #{$c900} 0%,#{$c400} 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$c900}', endColorstr='#{$c400}',GradientType=0 ); /* IE6-9 */ 
+            // border:1px solid silver;
+            color:white;
+            box-sizing: border-box;
+        }
+        .celda{
+            border:1px dotted black;
+            padding:0;
+            margin:0;
+        }
+        .input-ctrl{
+            border:0;
+            padding:0;
+            margin:0;
+            background:$c200;
+        }
+        .input-ctrl-new{
+            background:$c100;
+        }
+        
+        .new-row .cell{
+        background:$c100;
+        border-right: 1px solid $c50;
+        
+        }
+        
+        .cell{
+            position:relative;
+        }
+        .current-cell-bg{
+            position:relative;
+            background:$c200 !important;
+        
+        }
+        .cell-background{
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.3+100 */
+        background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%); /* FF3.6-15 */
+        background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.14) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#4d000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        }
+        .cell-background-1{
+        background-image: repeating-linear-gradient(315deg, #{$c50}, #{$c50} 5px, #{$c100} 5px, #{$c100} 10px);
+        
+        }
+        .cell-background-2{
+            opacity:1;
+            background: repeating-linear-gradient(315deg, #{$c300}, #{$c300} 1px, transparent 1px, transparent 10px), 
+                        linear-gradient(to bottom, #{$c400} 0%,#{$c900} 100%) !important; 
+        }
+        .disabled{
+            
+            cursor: not-allowed; 
+        }
+        .no-select{
+    -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+        }
+        .warning{
+            position:absolute;
+            bottom:0px;
+            right:0px;
+            vertical-align: middle;
+            z-index:20;
+            cursor:pointer;
+        }
+        
+        .fa-warning{
+            color:orangered;
+        }
+    
+        .dato{
+            background-color: white; 
+        }
+        .zebra{
+            background-color: silver;
+        }
+        tr[class='dato'] td:first-child{
+            border-left: 2px solid silver;
+        }
+        tr[class='dato'] td:last-child{
+            border-right: 2px solid silver;
+        }
+        tr[class='dato zebra']:hover, tr[class='dato']:hover{
+            background-color: yellow; 
+        }
+        .btn-cursor{
+            cursor:pointer;
+        }
+   }
+}
+[class*="animate-"] .ws-popover {
+    overflow: visible;
+}
+[class*="animate-"] .ws-popover.ws-po-visible .ws-po-outerbox {
+    opacity: 1;
+    -webkit-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1);
+}
+.animate-2 .ws-popover {
+    overflow: visible;
+    -webkit-perspective: 600px;
+    -webkit-transform-style: preserve-3d;
+    perspective: 600px;
+    transform-style: preserve-3d;
+}
+.animate-2 .ws-po-outerbox {
+    -webkit-transform: rotateX(-60deg);
+    -webkit-transform-origin: 50% 0 0;
+    transform: rotateX(-60deg);
+    transform-origin: 50% 0 0;
+}
+.animate-2 [data-vertical="bottom"] .ws-po-outerbox {
+    -webkit-transform: rotateX(60deg);
+    -webkit-transform-origin: -50% 100% 0;
+    transform-origin: -50% 100% 0;
+    transform: rotateX(60deg);
+}

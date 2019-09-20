@@ -1,0 +1,176 @@
+
+@import "../../../shared/scss/variables";
+
+@import "../../../shared/scss/reset";
+
+button::-moz-focus-inner {
+  border: 0;
+}
+button:focus{
+     outline: 0;
+}
+button:active{
+    outline:0;
+}
+
+html{
+    overflow: hidden;
+    overflow-y: auto;
+}
+html,body{
+    height:100%;
+    border:0;
+   
+}
+
+.container,.lyt0405{
+    display:block;
+    position:relative;
+    width:100%;
+    max-width:$maxpagew;
+    min-height:100vh;
+    margin:0 auto;
+    border:0;
+}
+.lyt0405{
+
+    .wrapper{
+        display:block;
+        position:relative;
+        width:100%;
+        max-width:$maxpagew;
+        min-height:100vh;
+        @media (min-width:768px){
+            min-height:calc(100vh - #{$headerHeight});
+        }
+        margin:0 auto;
+        border:0;
+        margin-left:0px;
+        transition: all 0.3s ease;
+        z-index:20;
+    }
+
+    .menu-area{
+        display:block;
+        position:absolute;
+        top:0;
+        left:0;
+        width:#{$asidew};
+        min-height:100%;
+        height: 100%;
+        @include background-menu-area-01;
+        @include shadow02;
+        @media (min-width:768px){
+            min-height: calc(100vh - #{$headerHeight});
+        }
+        transition: all 0.3s ease-in-out;
+    }
+    header{
+        display:none;
+        position:relative;
+        background: $c600;
+        width:100%;
+    
+        height: $headerHeight;
+    }
+    .actions{
+        display:block;
+        position:relative;
+        width:100%;
+        height:$nav;
+        padding:0 10px;
+        
+        @include background01;
+        @include shadowbottom02;
+        z-index:999;
+    }
+    main{
+        display:block;
+        position:relative;
+        width:100%;
+        min-height:calc(100vh - #{$nav} - #{$footer});
+        background:$c50;
+        border:0;
+    }
+
+    .content{
+        display:block;
+        position:relative;
+        width:100%;
+        
+        min-height:calc(100vh - #{$nav} - #{$footer});
+        
+        padding:7px;
+    }
+    footer{
+        display:block;
+        position:relative;
+        width:100%;
+        height:#{$footer};
+        background:$c50;
+        @include background01-inv;
+        @include shadowtop01;
+    }
+    .push-float-left{
+        float:left;
+    }
+    .push-float-right{
+        float:right;
+    }
+
+    @media (min-width:768px){
+    header{
+        display:block;
+        height: $headerHeight;
+        top:0;
+        left:0;
+    }
+    main,.actions,footer{
+            margin-left:#{$asidew};
+    }
+    main,.content{
+        min-height:calc(100vh - #{$nav} - #{$footer});
+    }
+    header ~ ux-layout  main ,
+    header ~ ux-layout  .content,
+    header ~ .wrapper main,
+    header ~ .wrapper .content
+    {
+            min-height:calc(100vh - #{$headerHeight} - #{$nav} - #{$footer});
+    }
+    main,.actions,footer{
+        width:calc(100% - #{$asidew});
+    }
+    
+    .wrapper{
+        padding-left:7px;
+    
+    }
+    #btn-toggle-left{
+        display:none;
+    }
+    #btn-toggle-right{
+        display:none;
+    }
+    .logo{
+        
+        width:10%;
+        height: 100%;
+        float:left;  
+    }
+    .logo svg{
+        
+        width:100%;
+        height:100%;
+    }
+    
+    .title-application{
+        color:$c50;
+        float:left;
+        top:-50%;
+        transform:translateY(50%);
+    }
+
+    }
+}
+

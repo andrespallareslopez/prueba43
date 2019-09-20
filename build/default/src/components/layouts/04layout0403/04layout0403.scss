@@ -1,0 +1,222 @@
+
+
+@import "../../../shared/scss/variables";
+
+@import "../../../shared/scss/reset";
+
+
+button::-moz-focus-inner {
+  border: 0;
+}
+button:focus{
+     outline: none;
+}
+button:active{
+    outline:0;
+}
+
+a,button{
+    -ms-touch-action: manipulation;	/* IE10  */
+	touch-action: manipulation;		/* IE11+ */
+}
+a,p,button{
+     -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
+}
+html{
+    height:100%;
+      overflow: hidden;
+    overflow-y: auto;
+}
+html,body{
+    height:100%;
+   
+  
+}
+/* ie
+body{
+  scrollbar-base-color: transparent;
+  scrollbar-base-color:transparent;
+  scrollbar-3dlight-color: transparent;
+  scrollbar-highlight-color:transparent;
+  scrollbar-track-color:transparent;
+  scrollbar-arrow-color:transparent;
+  scrollbar-shadow-color:transparent;
+  scrollbar-dark-shadow-color:transparent;
+}
+*/
+.container{
+    display:block;
+    position:relative;
+    width:100%;
+    max-width:960px;
+    height:0;
+    min-height:100%;
+    margin:0 auto;
+     -webkit-box-shadow: 3px 5px 10px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 5px 10px 1px rgba(0,0,0,0.75);
+box-shadow: 3px 1px 10px 1px rgba(0,0,0,1); 
+    
+    
+    
+    
+}
+.wrapper{
+    display:block;
+    position:relative;
+    width:100%;
+    max-width:960px;
+    height: 100%;
+    min-height:100%;
+    margin:0 auto;
+    border:0;
+    margin-left:0px;
+    
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    
+}
+ .wrapper.root main{
+        height: calc(100% - 47px - 47px);
+      min-height:calc(100% - 47px - 47px);
+   }
+   .wrapper.root .content{
+      height: 100%; 
+      min-height:100%;
+   }
+aside{
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    width:200px;
+    min-height:100%;
+    touch-action: none;
+    
+}
+header{
+    display:none;
+    position:relative;
+    background:white;
+    width:100%;
+    height:15%;
+}
+nav.actions{
+    display:block;
+    position:relative;
+    width:100%;
+    height:47px;
+    padding:0 0px;
+  
+    background:#673AB7;
+    -webkit-box-shadow: 3px 5px 10px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 5px 10px 1px rgba(0,0,0,0.75);
+     box-shadow: 3px 5px 10px 1px rgba(0,0,0,0.75);
+      z-index:111; 
+}
+main{
+    display:block;
+    position:relative;
+    width:100%;
+ 
+    /*min-height:100%;*/
+    min-height:calc(100% - 47px - 47px);
+     min-height:-webkit-calc(100% - 47px - 47px);
+    background:white;
+  
+}
+
+.content{
+    
+    display:block;
+    position:relative;
+    width:100%;
+    
+    
+    min-height:calc(100% - 47px - 47px);
+    min-height:-webkit-calc(100% - 47px - 47px);
+      
+    padding:3px;
+    
+}
+footer{
+    display:block;
+    position:relative;
+    width:100%;
+    height:47px;
+     padding:0 0;
+       background: #7e57c2; /* Old browsers */
+     background: -moz-linear-gradient(top,  #7e57c2 4%, #4527a0 99%, #4527a0 99%); /* FF3.6-15 */
+     background: -webkit-linear-gradient(top,  #7e57c2 4%,#4527a0 99%,#4527a0 99%); /* Chrome10-25,Safari5.1-6 */
+     background: linear-gradient(to bottom,  #7e57c2 4%,#4527a0 99%,#4527a0 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e57c2', endColorstr='#4527a0',GradientType=0 ); /* IE6-9 */
+         z-index:111; 
+    
+}
+.push-float-left{
+    float:left;
+}
+.push-float-right{
+    float:right;
+}
+
+@media (min-width:768px){
+    .container{
+  
+    }
+    /*
+      .wrapper{
+           height: calc(100vh - 15vh);
+           min-height: calc(100vh - 15vh);
+        
+    }
+    */
+   header{
+      display:block;
+   }
+   .wrapper.root main{
+        height: calc(100% - 15% - 47px - 47px);
+      min-height:calc(100% - 15% - 47px - 47px);
+   }
+   .wrapper.root .content{
+      height: 100%; 
+      min-height:100%;
+   }
+  main,footer,header,nav.actions{
+      /* width:calc(100% - 200px);*/
+
+   }
+   /*
+   main,.content{
+          height: calc(100vh - 15vh - 47px - 47px) !important;
+          min-height:calc(100vh - 15vh - 47px - 47px) !important;
+   }
+  */
+   .wrapper{
+    padding-left:7px;
+    margin-left:200px;
+    
+    
+   }
+   #btn-toggle-left1{
+       display:none;
+   }
+   #btn-toggle-right{
+       display:none;
+   }
+   .logo{
+       
+       width:15%;
+       height: 100%;
+       float:left;  
+   }
+   .title-application{
+       color:#311b92;
+       float:left;
+       top:-50%;
+       transform:translateY(50%);
+   }
+}

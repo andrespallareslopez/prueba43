@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,GAAI;EACF,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,GAAG;EACR,MAAM,EAAE,GAAG;EACX,IAAI,EAAE,GAAG;EACT,KAAK,EAAE,GAAG",
+"sources": ["02animation.scss"],
+"names": [],
+"file": "02animation.css"
+}
